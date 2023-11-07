@@ -1,7 +1,9 @@
+import { Container, NavbarComponent } from './Navbar.styles';
+
 export default function Navbar() {
   return (
-    <p>
-      navbar
-    </p>
+    <Container>
+      <NavbarComponent>navbar</NavbarComponent>
+    </Container>
   )
 }
