@@ -18,7 +18,7 @@ export default function NavbarDesktop() {
           alt="Hamburguer Icon"
           width={20}
           height={20}
-          />
+        />
       </NavbarIcons>
     </NavbarComponent>
   )
