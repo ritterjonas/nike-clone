@@ -9,6 +9,9 @@ const nextConfig = {
   async redirects() {
     return redirectRules;
   },
+  compiler: {
+    styledComponents: true
+  }
 }
 
 module.exports = nextConfig
