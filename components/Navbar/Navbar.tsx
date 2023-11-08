@@ -1,9 +1,18 @@
-import { Container, NavbarComponent } from './Navbar.styles';
+import { NavbarContainer } from './Navbar.styles';
+import NavbarMobile from './Navbar.mobile';
+import { OnlyDesktop, OnlyMobile } from '../AdaptiveLayout/AdaptiveLayout.styles';
+import NavbarDesktop from './Navbar.desktop';
 
 export default function Navbar() {
   return (
-    <Container>
-      <NavbarComponent>navbar</NavbarComponent>
-    </Container>
+    <NavbarContainer data-testid="navbar">
+      <OnlyDesktop>
+        <NavbarDesktop />
+      </OnlyDesktop>
+
+      <OnlyMobile>
+        <NavbarMobile />
+      </OnlyMobile>
+    </NavbarContainer>
   )
 }

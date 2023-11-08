@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const NavbarContainer = styled.div`
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 64px;
 `;
 
 export const NavbarComponent = styled.div`
@@ -11,4 +11,15 @@ export const NavbarComponent = styled.div`
   right: 0px;
   top: 0px;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  background-color: #FFF;
+`;
+
+export const NavbarIcons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 32px;
 `;
