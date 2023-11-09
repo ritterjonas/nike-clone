@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { StoreLocation } from '../types/Stores.types';
 import { useStores } from './useStores';
 import { getDistance } from '@/utils/geolocation';
