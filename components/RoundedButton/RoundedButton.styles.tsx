@@ -13,4 +13,10 @@ export const RoundedButton = styled.button`
   border: none;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;

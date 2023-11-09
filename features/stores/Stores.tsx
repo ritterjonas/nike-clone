@@ -1,8 +1,7 @@
-import TextField from '@/components/TextField/TextField';
 import { Container, Title } from './Stores.styles';
-import { useState } from 'react';
 import StoresList from './components/StoresList/StoresList';
 import { useStoresWithDistance } from './hooks/useStoresWithDistance';
+import StoreSearch from './components/StoreSearch/StoreSearch';
 
 const user = {
   lat: -23.541624,
@@ -10,18 +9,16 @@ const user = {
 };
 
 export default function Stores() {
-  const [search, setSearch] = useState('');
   const { stores } = useStoresWithDistance(user.lat, user.long);
+
+  const search = (value: string) => {
+    console.log(value);
+  };
 
   return (
     <Container>
       <Title>Lojas</Title>
-      <TextField
-        iconSrc='/images/icon_lupa.svg'
-        placeholder='Busque por endereço ou CEP'
-        value={search}
-        onChange={e => setSearch(e.target.value)}
-      />
+      <StoreSearch onSearch={search} />
 
       {stores && <StoresList stores={stores} />}
     </Container>

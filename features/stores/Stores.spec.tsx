@@ -33,16 +33,4 @@ describe('<Stores />', () => {
 
     expect(screen.getByTestId('stores-list')).toBeInTheDocument();
   });
-
-  test('filters stores by address or zip code', () => {
-    (useStores as jest.Mock).mockReturnValue({ stores: mockStores });
-
-    render(<Stores />);
-
-    fireEvent.change(screen.getByRole('textbox'), {
-      target: { value: 'Rua 1' },
-    });
-
-    expect(screen.getByTestId('stores-list')).toBeInTheDocument();
-  });
 });

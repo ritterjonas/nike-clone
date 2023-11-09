@@ -4,6 +4,7 @@ export const Container = styled.div`
   padding: 32px 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
 `;
 
