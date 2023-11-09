@@ -11,6 +11,7 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "axios": "^1.6.1",
     "next": "14.0.1",
     "react": "^18",

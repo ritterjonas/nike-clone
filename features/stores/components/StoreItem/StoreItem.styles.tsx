@@ -33,6 +33,7 @@ export const SeeMap = styled.button`
   border: none;
   background: transparent;
   outline: none;
+  cursor: pointer;
 `;
 
 export const SeeMapText = styled.p`
