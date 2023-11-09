@@ -1,20 +1,22 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import StoreItem from './StoreItem';
+import { StoreLocation } from '../../types/Stores.types';
 
-const store = {
+const store: StoreLocation = {
   name: 'Loja 1',
   number: 1,
   latitude: '-22.4116',
   longitude: '-47.5615',
   adress: 'Rua 1, 123, Centro, Rio Claro - SP',
+  distance: 1.312,
 };
 
 test('renders StoreItem component', () => {
   render(<StoreItem store={store} />);
 
   const storeName = screen.getByText('Loja 1');
-  const distance = screen.getByText('1km');
+  const distance = screen.getByText('1,3 km');
   const seeMap = screen.getByText('Ver no mapa');
   const address = screen.getByText('Rua 1, 123, Centro, Rio Claro - SP');
   const info = screen.getByText('Atendimento:');

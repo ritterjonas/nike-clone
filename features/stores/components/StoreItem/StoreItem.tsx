@@ -18,11 +18,20 @@ type StoreItemProps = {
 };
 
 export default function StoreItem({ store }: StoreItemProps) {
+  const getDistance = () => {
+    if (!store.distance) {
+      return '-';
+    }
+
+    const distance = store.distance.toFixed(1);
+    return `${distance.replace('.', ',')} km`;
+  };
+
   return (
     <Container data-testid='store-item'>
       <Header>
         <StoreName>{store.name}</StoreName>
-        <Distance>1km</Distance>
+        <Distance>{getDistance()}</Distance>
       </Header>
       <SeeMap>
         <Image

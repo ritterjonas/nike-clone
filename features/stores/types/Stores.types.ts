@@ -4,4 +4,5 @@ export interface StoreLocation {
   latitude: string;
   longitude: string;
   adress: string;
+  distance?: number;
 }
