@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const NewsContainer = styled.div`
   padding: 8px 16px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
-
 
 export const NewsContent = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ export const ArrowButton = styled.div`
   border-radius: 50%;
   height: 24px;
   width: 24px;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +30,6 @@ export const ArrowButton = styled.div`
 export const Text = styled.span`
   font-size: 12px;
 `;
-
 
 export const Link = styled.a`
   color: #000;

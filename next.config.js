@@ -10,8 +10,8 @@ const nextConfig = {
     return redirectRules;
   },
   compiler: {
-    styledComponents: true
-  }
-}
+    styledComponents: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

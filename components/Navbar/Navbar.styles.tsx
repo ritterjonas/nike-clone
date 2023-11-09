@@ -15,7 +15,7 @@ export const NavbarComponent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px 16px;
-  background-color: #FFF;
+  background-color: #fff;
 `;
 
 export const NavbarIcons = styled.div`

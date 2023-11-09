@@ -3,11 +3,9 @@ import { FooterContainer } from './Footer.styles';
 
 export default function Footer() {
   return (
-    <footer data-testid="footer">
+    <footer data-testid='footer'>
       <ReceiveNews />
-      <FooterContainer>
-        ENCONTRE UMA LOJA NIKE
-      </FooterContainer>
+      <FooterContainer>ENCONTRE UMA LOJA NIKE</FooterContainer>
     </footer>
-  )
+  );
 }

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const InputContainer = styled.div`
-  background-color: #FFF;
-  border: 1px solid #D6D6D6;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
   border-radius: 200px;
   padding: 16px;
   display: flex;

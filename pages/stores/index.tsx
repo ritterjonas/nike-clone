@@ -1,5 +1,5 @@
-import Stores from '@/features/stores/Stores'
-import Head from 'next/head'
+import Stores from '@/features/stores/Stores';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -11,5 +11,5 @@ export default function Home() {
         <Stores />
       </main>
     </>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google';
 import Navbar from '../Navbar/Navbar';
 import News from '../News/News';
 import Footer from '../Footer/Footer';
@@ -14,5 +14,5 @@ export default function Layout({ children }: PropsWithChildren) {
       <main>{children}</main>
       <Footer />
     </div>
-  )
+  );
 }

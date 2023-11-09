@@ -5,7 +5,7 @@ import Layout from './Layout';
 test('renders the Layout component correctly', () => {
   const { getByText, getByTestId } = render(
     <Layout>
-      <div data-testid="child-element">Child Content</div>
+      <div data-testid='child-element'>Child Content</div>
     </Layout>
   );
 

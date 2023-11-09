@@ -17,7 +17,9 @@ describe('ReceiveNews Component', () => {
 
   test('renders subtitle', () => {
     render(<ReceiveNews />);
-    const subtitle = screen.getByText('Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.');
+    const subtitle = screen.getByText(
+      'Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.'
+    );
     expect(subtitle).toBeInTheDocument();
   });
 
