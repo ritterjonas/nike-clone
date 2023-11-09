@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { StoreLocation } from '../types/Stores.types';
 
 export const useStores = () => {
-  const [stores, setStores] = useState();
-  const [error, setError] = useState();
+  const [stores, setStores] = useState<StoreLocation[]>();
+  const [error, setError] = useState<any>();
   const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {

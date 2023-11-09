@@ -2,6 +2,7 @@ import TextField from '@/components/TextField/TextField';
 import { Container, Title } from './Stores.styles';
 import { useState } from 'react';
 import { useStores } from './hooks/useStores';
+import StoresList from './components/StoresList/StoresList';
 
 export default function Stores() {
   const [search, setSearch] = useState('');
@@ -16,6 +17,8 @@ export default function Stores() {
         value={search}
         onChange={e => setSearch(e.target.value)}
       />
+
+      {stores && <StoresList stores={stores} />}
     </Container>
   );
 }
