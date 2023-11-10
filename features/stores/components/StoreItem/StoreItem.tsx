@@ -14,12 +14,14 @@ import { StoreLocation } from '../../types/Stores.types';
 import Image from 'next/image';
 import MapModal from '../MapModal/MapModal';
 import { useState } from 'react';
+import { useIsMobile } from '../../../../hooks/useIsMobile';
 
 type StoreItemProps = {
   store: StoreLocation;
 };
 
 export default function StoreItem({ store }: StoreItemProps) {
+  const isMobile = useIsMobile();
   const [openMap, setOpenMap] = useState(false);
 
   const getDistance = () => {
@@ -38,15 +40,19 @@ export default function StoreItem({ store }: StoreItemProps) {
           <StoreName>{store.name}</StoreName>
           <Distance>{getDistance()}</Distance>
         </Header>
-        <SeeMap>
-          <Image
-            src='/images/icon_pin_link.svg'
-            alt='Hamburguer Icon'
-            width={16}
-            height={20}
-          />
-          <SeeMapText onClick={() => setOpenMap(true)}>Ver no mapa</SeeMapText>
-        </SeeMap>
+        {isMobile && (
+          <SeeMap>
+            <Image
+              src='/images/icon_pin_link.svg'
+              alt='Hamburguer Icon'
+              width={16}
+              height={20}
+            />
+            <SeeMapText onClick={() => setOpenMap(true)}>
+              Ver no mapa
+            </SeeMapText>
+          </SeeMap>
+        )}
         <Card>
           <Address>{store.adress}</Address>
           <div>

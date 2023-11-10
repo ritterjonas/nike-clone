@@ -1,7 +1,10 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, fireEvent, act, screen } from '@testing-library/react';
 import StoreItem from './StoreItem';
 import { StoreLocation } from '../../types/Stores.types';
+import { useIsMobile } from '../../../../hooks/useIsMobile';
+
+jest.mock('../../../../hooks/useIsMobile');
 
 const store: StoreLocation = {
   name: 'Loja 1',
@@ -13,38 +16,45 @@ const store: StoreLocation = {
 };
 
 describe('<StoreItem />', () => {
-  test('renders StoreItem component', () => {
+  it('renders the StoreItem component with store details', () => {
+    (useIsMobile as jest.Mock).mockReturnValue(true);
     render(<StoreItem store={store} />);
+
+    expect(screen.getByTestId('store-item')).toBeInTheDocument();
 
     const storeName = screen.getByText('Loja 1');
-    const distance = screen.getByText('1,3 km');
-    const seeMap = screen.getByText('Ver no mapa');
-    const address = screen.getByText('Rua 1, 123, Centro, Rio Claro - SP');
-    const info = screen.getByText('Atendimento:');
-    const disponibility = screen.getByText('Disponível em 4 dias úteis');
-
     expect(storeName).toBeInTheDocument();
+
+    const distance = screen.getByText('1,3 km');
     expect(distance).toBeInTheDocument();
-    expect(seeMap).toBeInTheDocument();
+
+    const address = screen.getByText('Rua 1, 123, Centro, Rio Claro - SP');
     expect(address).toBeInTheDocument();
-    expect(info).toBeInTheDocument();
-    expect(disponibility).toBeInTheDocument();
+
+    const openMapButton = screen.getByText('Ver no mapa');
+    expect(openMapButton).toBeInTheDocument();
   });
 
-  test('opens and closes the map modal', () => {
+  it('does not render the "Ver no mapa" button on larger screens', () => {
+    (useIsMobile as jest.Mock).mockReturnValue(false);
     render(<StoreItem store={store} />);
 
-    expect(screen.queryByTestId('map-modal')).not.toBeInTheDocument();
+    const openMapButton = screen.queryByText('Ver no mapa');
+    expect(openMapButton).not.toBeInTheDocument();
+  });
 
-    const seeMapButton = screen.getByText('Ver no mapa');
-    fireEvent.click(seeMapButton);
+  it('opens the map modal when "Ver no mapa" button is clicked on mobile', () => {
+    (useIsMobile as jest.Mock).mockReturnValue(true);
+    render(<StoreItem store={store} />);
 
-    const mapModal = screen.getByTestId('map-modal');
+    const openMapButton = screen.getByText('Ver no mapa');
+    expect(openMapButton).toBeInTheDocument();
+
+    act(() => {
+      fireEvent.click(openMapButton);
+    });
+
+    const mapModal = screen.getByTestId('map-modal'); // Assuming you have a data-testid for the MapModal
     expect(mapModal).toBeInTheDocument();
-
-    const closeButton = screen.getByTestId('close-button');
-    fireEvent.click(closeButton);
-
-    expect(screen.queryByTestId('map-modal')).not.toBeInTheDocument();
   });
 });

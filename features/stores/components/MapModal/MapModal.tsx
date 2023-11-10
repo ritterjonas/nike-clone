@@ -22,7 +22,7 @@ export default function MapModal({ store, close }: StoreItemProps) {
         </CloseButton>
       </Header>
       <MapContent data-testid='map-content'>
-        <Maps lat={+store.latitude} lng={+store.longitude} zoom={16} />
+        <Maps markers={[{ lat: +store.latitude, lng: +store.longitude }]} />
       </MapContent>
     </Modal>
   );

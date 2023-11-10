@@ -19,7 +19,7 @@ describe('<Maps />', () => {
     const lng = -122.4194;
     const zoom = 10;
 
-    render(<Maps lat={lat} lng={lng} zoom={zoom} />);
+    render(<Maps markers={[{ lat, lng }]} />);
 
     const map = screen.getByTestId('google-map');
     expect(map).toBeInTheDocument();

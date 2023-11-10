@@ -8,6 +8,17 @@ export const Container = styled.div`
   gap: 32px;
 `;
 
+export const StoresContainer = styled.div`
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+`;
+
+export const MapsContainer = styled.div`
+  flex: 1 1 0px;
+`;
+
 export const Title = styled.h1`
   font-size: 32px;
   font-weight: 500;

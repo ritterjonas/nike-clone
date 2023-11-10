@@ -8,4 +8,7 @@ export const Container = styled.div`
   gap: 48px;
   border-radius: 8px;
   background: #f7f7f7;
+  flex: 1 1 0px;
+  max-height: 600px;
+  overflow-y: auto;
 `;
