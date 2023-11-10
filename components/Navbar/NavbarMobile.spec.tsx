@@ -1,20 +1,11 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import NavbarMobile from './Navbar.mobile';
+import NavbarMobile from './NavbarMobile';
 
 describe('<NavbarMobile />', () => {
-  it('renders the mobile navbar with Nike logo and icons', () => {
-    render(<NavbarMobile />);
-
-    const navbarMobileElement = screen.getByTestId('navbar-mobile');
-    const nikeLogo = screen.getByTestId('nike-logo-mobile');
-    const sacolaIcon = screen.getByAltText('Hamburguer Icon');
-    const hamburguerIcon = screen.getByAltText('Hamburguer Icon');
-
-    expect(navbarMobileElement).toBeInTheDocument();
-    expect(nikeLogo).toBeInTheDocument();
-    expect(sacolaIcon).toBeInTheDocument();
-    expect(hamburguerIcon).toBeInTheDocument();
+  test('matches snapshot', () => {
+    const { asFragment } = render(<NavbarMobile />);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('opens the drawer when the hamburguer icon is clicked', () => {

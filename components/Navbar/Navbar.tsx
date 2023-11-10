@@ -1,6 +1,6 @@
 import { NavbarContainer } from './Navbar.styles';
-import NavbarMobile from './Navbar.mobile';
-import NavbarDesktop from './Navbar.desktop';
+import NavbarMobile from './NavbarMobile';
+import NavbarDesktop from './NavbarDesktop';
 import { useIsMobile } from '../../hooks/useIsMobile';
 
 export default function Navbar() {

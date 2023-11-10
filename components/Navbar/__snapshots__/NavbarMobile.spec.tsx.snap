@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavbarMobile /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-85bd0fd4-0 hdtlb"
+    data-testid="navbar-mobile"
+  >
+    <img
+      alt="Nike Logo"
+      data-nimg="1"
+      data-testid="nike-logo-mobile"
+      decoding="async"
+      height="15"
+      loading="lazy"
+      src="/images/logo_nike.svg"
+      style="color: transparent;"
+      width="40"
+    />
+    <div
+      class="sc-85bd0fd4-1 hszeMi"
+    >
+      <a
+        class="sc-85bd0fd4-2 iCNiDP"
+        href="#"
+      >
+        <img
+          alt="Bag Icon"
+          data-nimg="1"
+          decoding="async"
+          height="20"
+          loading="lazy"
+          src="/images/icon_sacola.svg"
+          style="color: transparent;"
+          width="20"
+        />
+      </a>
+      <a
+        class="sc-85bd0fd4-2 iCNiDP"
+        href="#"
+      >
+        <img
+          alt="Hamburguer Icon"
+          data-nimg="1"
+          decoding="async"
+          height="24"
+          loading="lazy"
+          src="/images/icon_hamburguer.svg"
+          style="color: transparent;"
+          width="24"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

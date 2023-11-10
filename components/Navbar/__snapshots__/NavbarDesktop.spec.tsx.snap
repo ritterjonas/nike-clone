@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavbarDesktop /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdbead5f-1 Tapag"
+  >
+    <div
+      class="sc-bdbead5f-2 efHBR"
+    >
+      <img
+        alt="Nike Logo"
+        data-nimg="1"
+        data-testid="jordan-logo-desktop"
+        decoding="async"
+        height="24"
+        loading="lazy"
+        src="/images/logo_jordan.svg"
+        style="color: transparent;"
+        width="24"
+      />
+      <img
+        alt="Nike Logo"
+        data-nimg="1"
+        data-testid="snkrs-logo-desktop"
+        decoding="async"
+        height="24"
+        loading="lazy"
+        src="/images/logo_snkrs.svg"
+        style="color: transparent;"
+        width="48"
+      />
+    </div>
+    <div
+      class="sc-bdbead5f-3 gAQxAM"
+    >
+      <a
+        class="sc-bdbead5f-4 kUVdiI"
+        href="#"
+      >
+        Ajuda
+      </a>
+      <div
+        class="sc-bdbead5f-5 byFZNl"
+      />
+      <a
+        class="sc-bdbead5f-4 kUVdiI"
+        href="#"
+      >
+        Acompanhe seu pedido
+      </a>
+      <div
+        class="sc-bdbead5f-5 byFZNl"
+      />
+      <a
+        class="sc-bdbead5f-4 kUVdiI"
+        href="#"
+      >
+        Junte-se a nós
+      </a>
+      <div
+        class="sc-bdbead5f-5 byFZNl"
+      />
+      <a
+        class="sc-bdbead5f-4 kUVdiI"
+        href="#"
+      >
+        Entrar
+      </a>
+    </div>
+  </div>
+  <div
+    class="sc-bdbead5f-0 gEbleI"
+    data-testid="navbar-desktop"
+  >
+    <img
+      alt="Nike Logo"
+      data-nimg="1"
+      data-testid="nike-logo-desktop"
+      decoding="async"
+      height="15"
+      loading="lazy"
+      src="/images/logo_nike.svg"
+      style="color: transparent;"
+      width="40"
+    />
+    <div
+      class="sc-bdbead5f-8 ghfAYz"
+    >
+      <div
+        class="sc-bdbead5f-9 lmiXWG"
+      >
+        <a
+          class="sc-bdbead5f-10 bSvaFL"
+          href="#"
+        >
+          Lançamento
+        </a>
+      </div>
+      <div
+        class="sc-bdbead5f-9 lmiXWG"
+      >
+        <a
+          class="sc-bdbead5f-10 bSvaFL"
+          href="#"
+        >
+          Masculino
+        </a>
+      </div>
+      <div
+        class="sc-bdbead5f-9 lmiXWG"
+      >
+        <a
+          class="sc-bdbead5f-10 bSvaFL"
+          href="#"
+        >
+          Feminino
+        </a>
+      </div>
+      <div
+        class="sc-bdbead5f-9 lmiXWG"
+      >
+        <a
+          class="sc-bdbead5f-10 bSvaFL"
+          href="#"
+        >
+          Infantil
+        </a>
+      </div>
+      <div
+        class="sc-bdbead5f-9 lmiXWG"
+      >
+        <a
+          class="sc-bdbead5f-10 bSvaFL"
+          href="#"
+        >
+          Ofertas
+        </a>
+      </div>
+      <div
+        class="sc-bdbead5f-9 lmiXWG"
+      >
+        <a
+          class="sc-bdbead5f-10 bSvaFL"
+          href="#"
+        >
+          SNKRS
+        </a>
+      </div>
+    </div>
+    <div
+      class="sc-bdbead5f-6 ieLyPj"
+    >
+      <div
+        class="sc-bdbead5f-11 cUKETF"
+      >
+        <img
+          alt="Search icon"
+          data-nimg="1"
+          decoding="async"
+          height="12"
+          loading="lazy"
+          src="/images/icon_lupa.svg"
+          style="color: transparent;"
+          width="12"
+        />
+        <input
+          class="sc-bdbead5f-12 fkvgyl"
+          placeholder="Buscar"
+          type="text"
+        />
+      </div>
+      <a
+        class="sc-bdbead5f-7 kSunjU"
+        href="#"
+      >
+        <img
+          alt="Bag Icon"
+          data-nimg="1"
+          decoding="async"
+          height="20"
+          loading="lazy"
+          src="/images/icon_sacola.svg"
+          style="color: transparent;"
+          width="20"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -4,6 +4,7 @@ export const NewsContainer = styled.div`
   padding: 8px 16px;
   background-color: #f7f7f7;
   position: relative;
+  overflow: hidden;
 `;
 
 export const NewsContent = styled.div`

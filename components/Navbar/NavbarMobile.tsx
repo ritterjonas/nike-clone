@@ -7,7 +7,7 @@ import {
   NavbarIcon,
   NavbarIcons,
   Overlay,
-} from './Navbar.styles';
+} from './NavbarMobile.styles';
 import { useState } from 'react';
 
 export default function NavbarMobile() {
