@@ -1,5 +1,5 @@
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 
 type MarkerType = {
   lat: number;
@@ -11,18 +11,41 @@ type StoreItemProps = {
 };
 
 function Maps({ markers }: StoreItemProps) {
+  const [map, setMap] = useState(null);
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || '',
   });
 
-  const onLoad = useCallback((map: any) => {
-    const bounds = new google.maps.LatLngBounds();
-    markers.forEach(marker => {
-      bounds.extend(new google.maps.LatLng(marker.lat, marker.lng));
-    });
-    map.fitBounds(bounds);
+  const fitBounds = useCallback(
+    (map: any) => {
+      const bounds = new google.maps.LatLngBounds();
+      markers.forEach(marker => {
+        bounds.extend(new google.maps.LatLng(marker.lat, marker.lng));
+      });
+      map.fitBounds(bounds);
+    },
+    [markers]
+  );
+
+  const onLoad = useCallback(
+    (map: any) => {
+      fitBounds(map);
+      setMap(map);
+    },
+    [markers]
+  );
+
+  const onUnmount = useCallback(function callback() {
+    setMap(null);
   }, []);
+
+  useEffect(() => {
+    if (map) {
+      fitBounds(map);
+    }
+  }, [map, markers, fitBounds]);
 
   return (
     isLoaded && (
@@ -32,6 +55,7 @@ function Maps({ markers }: StoreItemProps) {
           height: '100%',
         }}
         onLoad={onLoad}
+        onUnmount={onUnmount}
       >
         {markers.map(marker => (
           <Marker

@@ -15,17 +15,9 @@ export default function StoreSearch({ onSearch }: StoreSearch) {
 
   const debouncedInputValue = useDebounce(inputValue, 500);
 
-  const search = () => {
-    if (inputValue.length < 3) {
-      return;
-    }
-
-    onSearch(inputValue);
-  };
-
   useEffect(() => {
     if (isMobile && debouncedInputValue) {
-      search();
+      onSearch(inputValue);
     }
   }, [isMobile, debouncedInputValue]);
 
@@ -38,7 +30,9 @@ export default function StoreSearch({ onSearch }: StoreSearch) {
         onChange={e => setInputValue(e.target.value)}
       />
       {!isMobile && (
-        <RoundedButton onClick={() => search()}>Buscar</RoundedButton>
+        <RoundedButton onClick={() => onSearch(inputValue)}>
+          Buscar
+        </RoundedButton>
       )}
     </SearchContainer>
   );
