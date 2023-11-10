@@ -9,10 +9,12 @@ export const Container = styled.div`
 `;
 
 export const StoresContainer = styled.div`
-  display: flex;
-  gap: 32px;
+  max-width: 1400px;
   width: 100%;
-  max-width: 1200px;
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: 32px;
 `;
 
 export const MapsContainer = styled.div`

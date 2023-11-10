@@ -1,21 +1,14 @@
 import { NavbarContainer } from './Navbar.styles';
 import NavbarMobile from './Navbar.mobile';
-import {
-  OnlyDesktop,
-  OnlyMobile,
-} from '../AdaptiveLayout/AdaptiveLayout.styles';
 import NavbarDesktop from './Navbar.desktop';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 export default function Navbar() {
+  const isMobile = useIsMobile();
+
   return (
     <NavbarContainer data-testid='navbar'>
-      <OnlyDesktop>
-        <NavbarDesktop />
-      </OnlyDesktop>
-
-      <OnlyMobile>
-        <NavbarMobile />
-      </OnlyMobile>
+      {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
     </NavbarContainer>
   );
 }

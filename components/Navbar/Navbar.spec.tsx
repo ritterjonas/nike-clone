@@ -1,10 +1,34 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import Navbar from './Navbar'; // Certifique-se de importar o componente corretamente
+import { render, screen } from '@testing-library/react';
+import Navbar from './Navbar';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
-test('render Navbar component', () => {
-  const { getByTestId } = render(<Navbar />);
+jest.mock('../../hooks/useIsMobile', () => ({
+  useIsMobile: jest.fn(),
+}));
 
-  expect(getByTestId('nike-logo-desktop')).toBeInTheDocument();
-  expect(getByTestId('nike-logo-mobile')).toBeInTheDocument();
+describe('<Navbar />', () => {
+  it('renders NavbarMobile on mobile devices', () => {
+    (useIsMobile as jest.Mock).mockReturnValue(true);
+
+    render(<Navbar />);
+
+    const navbarMobileElement = screen.getByTestId('navbar-mobile');
+    const navbarDesktopElement = screen.queryByTestId('navbar-desktop');
+
+    expect(navbarMobileElement).toBeInTheDocument();
+    expect(navbarDesktopElement).toBeNull();
+  });
+
+  it('renders NavbarDesktop on non-mobile devices', () => {
+    (useIsMobile as jest.Mock).mockReturnValue(false);
+
+    render(<Navbar />);
+
+    const navbarDesktopElement = screen.getByTestId('navbar-desktop');
+    const navbarMobileElement = screen.queryByTestId('navbar-mobile');
+
+    expect(navbarDesktopElement).toBeInTheDocument();
+    expect(navbarMobileElement).toBeNull();
+  });
 });

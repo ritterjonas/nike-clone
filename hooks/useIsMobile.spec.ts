@@ -22,7 +22,7 @@ describe('useIsMobile hook', () => {
     const { result } = renderHook(() => useIsMobile());
 
     act(() => {
-      global.innerWidth = 1200;
+      global.innerWidth = 1400;
       global.dispatchEvent(new Event('resize'));
     });
 
