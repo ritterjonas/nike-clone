@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    data-testid="footer"
+  >
+    <div
+      class="sc-65e1a52f-0 gSumcn"
+    >
+      <img
+        alt="Nike logo"
+        data-nimg="1"
+        data-testid="receive-news-nike-logo"
+        decoding="async"
+        height="48"
+        loading="lazy"
+        src="/images/logo_nike.svg"
+        style="color: transparent;"
+        width="100"
+      />
+      <h3
+        class="sc-65e1a52f-1 fvpAyM"
+      >
+        RECEBA AS NOVIDADES DA NIKE
+      </h3>
+      <h4
+        class="sc-65e1a52f-2 hvsCYe"
+      >
+        Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.
+      </h4>
+      <button
+        class="sc-c0409c3f-0 biZASl"
+      >
+        Cadastre-se
+      </button>
+    </div>
+    <div
+      class="sc-3154c537-0 fTvuef"
+    >
+      <div
+        class="sc-3154c537-1 koTkBj"
+      >
+        <div
+          class="sc-3154c537-2 jPAotN"
+        >
+          <a
+            class="sc-3154c537-4 fYpZJl"
+            href="#"
+          >
+            Encontre Uma Loja Nike
+          </a>
+          <a
+            class="sc-3154c537-4 fYpZJl"
+            href="#"
+          >
+            Cadastre-se para receber novidades
+          </a>
+          <a
+            class="sc-3154c537-4 fYpZJl"
+            href="#"
+          >
+            Mapa do site
+          </a>
+        </div>
+        <div
+          class="sc-3154c537-2 jPAotN"
+        >
+          <a
+            class="sc-3154c537-4 fYpZJl"
+          >
+            Ajuda
+          </a>
+          <div
+            class="sc-3154c537-3 bQgkB"
+          >
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Dúvidas Gerais
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Encontre seu Tamanho
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Entregas
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Pedidos
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Trocas e Devoluções
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Editar consentimento
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Preferências de Cookie
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Pagamentos
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Produtos
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Corporativo
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Fale Conosco
+            </a>
+          </div>
+        </div>
+        <div
+          class="sc-3154c537-2 jPAotN"
+        >
+          <a
+            class="sc-3154c537-4 fYpZJl"
+          >
+            Sobre a nike
+          </a>
+          <div
+            class="sc-3154c537-3 bQgkB"
+          >
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Feito para Jogar
+            </a>
+            <a
+              class="sc-3154c537-5 jDCPrJ"
+              href="#"
+            >
+              Sustentabilidade
+            </a>
+          </div>
+        </div>
+        <div
+          class="sc-3154c537-2 jPAotN"
+        >
+          <a
+            class="sc-3154c537-4 fYpZJl"
+          >
+            Redes sociais
+          </a>
+          <div
+            class="sc-3154c537-7 fnDDLr"
+          >
+            <img
+              alt="facebook logo"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/images/logo_redes_sociais_facebook.svg"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="instagram logo"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/images/logo_redes_sociais_instagram.svg"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="youtube logo"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/images/logo_redes_sociais_youtube.svg"
+              style="color: transparent;"
+              width="32"
+            />
+          </div>
+          <a
+            class="sc-3154c537-4 fYpZJl"
+          >
+            Formas de pagamento
+          </a>
+          <div
+            class="sc-3154c537-6 jbAezL"
+          >
+            <img
+              alt="Mastercard logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Mastercard.svg"
+              style="color: transparent;"
+              width="48"
+            />
+            <img
+              alt="Visa logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Visa.svg"
+              style="color: transparent;"
+              width="48"
+            />
+            <img
+              alt="Amex logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Amex.svg"
+              style="color: transparent;"
+              width="48"
+            />
+            <img
+              alt="Elo logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Elo.svg"
+              style="color: transparent;"
+              width="48"
+            />
+            <img
+              alt="Hipercard logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Hipercard.svg"
+              style="color: transparent;"
+              width="48"
+            />
+            <img
+              alt="Discover logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Discover.svg"
+              style="color: transparent;"
+              width="48"
+            />
+            <img
+              alt="Boleto logo"
+              data-nimg="1"
+              decoding="async"
+              height="36"
+              loading="lazy"
+              src="/images/pgto_Boleto.svg"
+              style="color: transparent;"
+              width="48"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-3154c537-8 fXWYaw"
+      >
+        <div
+          class="sc-3154c537-9 cJxEoh"
+        >
+          <a
+            class="sc-3154c537-10 iRpfLa"
+          >
+            Brasil
+          </a>
+          <a
+            class="sc-3154c537-10 iRpfLa"
+            href="#"
+          >
+            Política de Privacidade
+          </a>
+          <a
+            class="sc-3154c537-10 iRpfLa"
+            href="#"
+          >
+            Termos de Uso
+          </a>
+        </div>
+        <div
+          class="sc-3154c537-9 cJxEoh"
+        >
+          <div
+            class="sc-3154c537-11 qbJtA"
+          >
+            <p>
+              © 2021 Nike. Todos os direitos reservados. Fisia Comércio de Produtos Esportivos
+            </p>
+            <p>
+              Ltda - CNPJ: 59.546.515/0016-10 Rua José Semião Rodrigues Agostinho, 1370 -
+            </p>
+            <p>
+              Galpão Unidade 17 - Nível 0, 1 e 2 - CEP 06833-300 - Embu das Artes/SP.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
