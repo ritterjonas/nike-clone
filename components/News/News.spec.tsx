@@ -15,15 +15,20 @@ describe('News Component', () => {
     expect(rightArrow).toBeInTheDocument();
   });
 
-  test('renders SNKRS logo', () => {
+  test('render logos', () => {
     render(<News />);
-    const snkrsLogo = screen.getByTestId('news-snkrs-logo');
-    expect(snkrsLogo).toBeInTheDocument();
+    const logos = screen.queryAllByTestId('news-logo');
+    expect(logos).toHaveLength(3);
   });
 
   test('renders text', () => {
     render(<News />);
-    const text = screen.getByText('Fique por dentro dos lançamentos SNKRS');
-    expect(text).toBeInTheDocument();
+    expect(
+      screen.getByText('Fique por dentro dos lançamentos')
+    ).toBeInTheDocument();
+    expect(screen.getByText('Encontre seu ideal')).toBeInTheDocument();
+    expect(
+      screen.getByText('Os melhores preços e promoções')
+    ).toBeInTheDocument();
   });
 });

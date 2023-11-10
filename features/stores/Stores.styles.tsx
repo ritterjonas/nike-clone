@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 32px 16px;
+  padding: 40px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 40px;
 `;
 
 export const StoresContainer = styled.div`
