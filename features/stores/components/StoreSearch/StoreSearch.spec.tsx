@@ -11,7 +11,7 @@ describe('<StoreSearch />', () => {
     );
 
     const inputElement = getByPlaceholderText(
-      'Busque por endereço ou digite suas coordenadas'
+      'Busque por endereço ou coordenadas geográficas'
     );
     const searchButtonElement = getByText('Buscar');
 

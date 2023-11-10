@@ -18,7 +18,8 @@ const user = {
 
 export default function Stores() {
   const [search, setSearch] = useState('');
-  const { stores } = useStoresFiltered(search);
+  const [order, setOrder] = useState('shorter');
+  const { stores } = useStoresFiltered(search, order);
   const isMobile = useIsMobile();
 
   return (
@@ -28,7 +29,7 @@ export default function Stores() {
 
       {stores && (
         <StoresContainer>
-          <StoresList stores={stores} />
+          <StoresList stores={stores} order={order} changeOrder={setOrder} />
           {!isMobile && (
             <MapsContainer>
               <Maps

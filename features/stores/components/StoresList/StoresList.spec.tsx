@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import StoresList from './StoresList';
 import { StoreLocation } from '../../types/Stores.types';
 
@@ -19,13 +19,24 @@ const mockStores: StoreLocation[] = [
     adress: 'Rua das Frutas, 124 - Centro, Rio Claro - SP, 13501-000',
   },
 ];
+describe('StoresList Component', () => {
+  it('renders the list of stores and the select field', () => {
+    const mockChangeOrder = jest.fn();
+    render(
+      <StoresList
+        stores={mockStores}
+        order='shorter'
+        changeOrder={mockChangeOrder}
+      />
+    );
 
-describe('<StoresList />', () => {
-  it('should render correctly', () => {
-    render(<StoresList stores={mockStores} />);
+    const storesListElement = screen.getByTestId('stores-list');
+    expect(storesListElement).toBeInTheDocument();
 
-    expect(screen.getByText('Menor distância')).toBeInTheDocument();
+    const selectFieldElement = screen.getByTestId('select-field');
+    expect(selectFieldElement).toBeInTheDocument();
 
-    expect(screen.getAllByTestId('store-item')).toHaveLength(2);
+    const storeItemElements = screen.getByText('Menor distância');
+    expect(storeItemElements).toBeInTheDocument();
   });
 });

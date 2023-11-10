@@ -25,7 +25,7 @@ export default function StoreSearch({ onSearch }: StoreSearch) {
     <SearchContainer>
       <TextField
         iconSrc='/images/icon_lupa.svg'
-        placeholder='Busque por endereço ou digite suas coordenadas'
+        placeholder='Busque por endereço ou coordenadas geográficas'
         value={inputValue}
         onChange={e => setInputValue(e.target.value)}
       />

@@ -26,7 +26,7 @@ export default function StoreItem({ store }: StoreItemProps) {
 
   const getDistance = () => {
     if (!store.distance) {
-      return '-';
+      return '';
     }
 
     const distance = store.distance.toFixed(1);
