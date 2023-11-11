@@ -3,7 +3,7 @@
 exports[`<NavbarMobile /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-85bd0fd4-0 hdtlb"
+    class="sc-b73ccaf6-0 ffQtWh"
     data-testid="navbar-mobile"
   >
     <img
@@ -18,10 +18,10 @@ exports[`<NavbarMobile /> matches snapshot 1`] = `
       width="40"
     />
     <div
-      class="sc-85bd0fd4-1 hszeMi"
+      class="sc-b73ccaf6-1 lBeEc"
     >
       <a
-        class="sc-85bd0fd4-2 iCNiDP"
+        class="sc-b73ccaf6-2 iSqHSx"
         href="#"
       >
         <img
@@ -36,7 +36,7 @@ exports[`<NavbarMobile /> matches snapshot 1`] = `
         />
       </a>
       <a
-        class="sc-85bd0fd4-2 iCNiDP"
+        class="sc-b73ccaf6-2 iSqHSx"
         href="#"
       >
         <img

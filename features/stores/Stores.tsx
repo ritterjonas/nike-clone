@@ -33,7 +33,7 @@ export default function Stores() {
             stores={stores}
             order={order}
             changeOrder={setOrder}
-            activeMarker={activeMarker}
+            activeMarker={!isMobile ? activeMarker : undefined}
             setActiveMarker={marker => setActiveMarker(marker)}
           />
           {!isMobile && (

@@ -35,7 +35,7 @@ export const Drawer = styled.aside`
   height: 100vh;
   position: fixed;
   top: 0px;
-  z-index: 500;
+  z-index: 401;
   right: 0px;
   padding: 16px 24px;
   box-sizing: border-box;
