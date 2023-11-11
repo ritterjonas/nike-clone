@@ -9,13 +9,6 @@ export const Container = styled.div`
   border-radius: 8px;
   background: #f7f7f7;
   flex: 1 1 0px;
-
-  @media (min-width: 1024px) {
-    max-height: 600px;
-    min-height: 500px;
-    overflow-y: auto;
-    align-items: start;
-  }
 `;
 
 export const ListItem = styled.div`

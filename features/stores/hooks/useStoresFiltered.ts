@@ -1,28 +1,34 @@
 import { useMemo } from 'react';
 import { StoreLocation } from '../types/Stores.types';
 import { useStores } from './useStores';
-import { getDistance, parseCoordinates } from '@/utils/geolocation';
+import { getDistance } from '@/utils/geolocation';
+import { useUserLocation } from '../../../hooks/useUserLocation';
+import { MarkerType } from '@/components/Maps/Maps';
 
-const filterByCoordinates = (
+const filterAndOrder = (
   stores: StoreLocation[],
-  lat: number,
-  lng: number,
+  location: MarkerType,
   order: string
 ) => {
-  const storesWithDistance = stores.map(store => ({
+  const storesFiltered = stores.map(store => ({
     ...store,
-    distance: getDistance(lat, lng, +store.latitude, +store.longitude),
+    distance: getDistance(
+      location.lat,
+      location.lng,
+      +store.latitude,
+      +store.longitude
+    ),
   }));
 
   if (order === 'shorter') {
-    storesWithDistance.sort((a, b) => a.distance - b.distance);
+    storesFiltered.sort((a, b) => a.distance - b.distance);
   }
 
   if (order === 'longer') {
-    storesWithDistance.sort((a, b) => b.distance - a.distance);
+    storesFiltered.sort((a, b) => b.distance - a.distance);
   }
 
-  return storesWithDistance.slice(0, 3);
+  return storesFiltered;
 };
 
 const filterByTerm = (stores: StoreLocation[], term: string) => {
@@ -33,25 +39,21 @@ const filterByTerm = (stores: StoreLocation[], term: string) => {
 
 export const useStoresFiltered = (search: string, order: string) => {
   const { stores, error, loading } = useStores();
+  const { location } = useUserLocation();
 
-  const storesFiltered = useMemo(() => {
+  const storesMemo = useMemo(() => {
     if (!stores) {
-      return undefined;
+      return null;
     }
 
-    const coordinates = parseCoordinates(search);
+    let storesFiltered = filterByTerm(stores, search);
 
-    if (coordinates) {
-      return filterByCoordinates(
-        stores,
-        coordinates.lat,
-        coordinates.lng,
-        order
-      );
+    if (location) {
+      storesFiltered = filterAndOrder(storesFiltered, location, order);
     }
 
-    return filterByTerm(stores, search);
-  }, [search, stores, order]);
+    return storesFiltered.slice(0, 3);
+  }, [search, stores, order, location]);
 
-  return { stores: storesFiltered, error, loading };
+  return { stores: storesMemo, error, loading };
 };

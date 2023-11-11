@@ -10,9 +10,7 @@ describe('<StoreSearch />', () => {
       <StoreSearch onSearch={onSearchMock} />
     );
 
-    const inputElement = getByPlaceholderText(
-      'Busque por endereço ou coordenadas geográficas'
-    );
+    const inputElement = getByPlaceholderText('Busque por endereço');
     const searchButtonElement = getByText('Buscar');
 
     expect(inputElement).toBeInTheDocument();

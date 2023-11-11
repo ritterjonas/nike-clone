@@ -2,10 +2,10 @@ import { renderHook } from '@testing-library/react';
 import { useStoresFiltered } from './useStoresFiltered';
 import { useStores } from './useStores'; // Importe o hook useStores ou utilize um mock
 import { StoreLocation } from '../types/Stores.types';
+import { useUserLocation } from '../../../hooks/useUserLocation';
 
-jest.mock('./useStores', () => ({
-  useStores: jest.fn(),
-}));
+jest.mock('./useStores');
+jest.mock('../../../hooks/useUserLocation');
 
 const stores: StoreLocation[] = [
   {
@@ -25,43 +25,42 @@ const stores: StoreLocation[] = [
 ];
 
 describe('useStoresFiltered Hook', () => {
-  it('filters stores by term when search is not coordinates', () => {
+  it('filters stores by term without user location', () => {
     (useStores as jest.Mock).mockReturnValue({
       stores,
       error: null,
       loading: false,
     });
+    (useUserLocation as jest.Mock).mockReturnValue({
+      location: null,
+    });
 
-    const { result } = renderHook(() => useStoresFiltered('Frutas'));
+    const { result } = renderHook(() => useStoresFiltered('Frutas', 'shorter'));
 
     expect(result.current.stores).toEqual([stores[1]]);
     expect(result.current.error).toBeNull();
     expect(result.current.loading).toBeFalsy();
   });
 
-  it('filters stores by coordinates when search is coordinates', () => {
+  it('filters stores by term with user location', () => {
     (useStores as jest.Mock).mockReturnValue({
       stores,
       error: null,
       loading: false,
     });
+    (useUserLocation as jest.Mock).mockReturnValue({
+      location: {
+        lat: -22.952757,
+        lng: -47.02133,
+      },
+    });
 
-    const { result } = renderHook(() =>
-      useStoresFiltered('-22.812607, -47.154530')
-    );
+    const { result } = renderHook(() => useStoresFiltered('Frutas', 'shorter'));
 
     expect(result.current.stores).toEqual([
       {
-        adress: 'Rua das Flores, 123 - Centro, Rio Claro - SP, 13500-000',
-        distance: 14.142135623731154,
-        latitude: '-22.912607',
-        longitude: '-47.054530',
-        name: 'Store 1',
-        number: 123,
-      },
-      {
         adress: 'Rua das Frutas, 124 - Centro, Rio Claro - SP, 13501-000',
-        distance: 14.362802651293565,
+        distance: 5.016016846064036,
         latitude: '-22.912707',
         longitude: '-47.051530',
         name: 'Store 2',
@@ -79,9 +78,11 @@ describe('useStoresFiltered Hook', () => {
       loading: true,
     });
 
-    const { result } = renderHook(() => useStoresFiltered('Address'));
+    const { result } = renderHook(() =>
+      useStoresFiltered('Address', 'shorter')
+    );
 
-    expect(result.current.stores).toBeUndefined();
+    expect(result.current.stores).toBeNull();
     expect(result.current.error).toBe('Error message');
     expect(result.current.loading).toBeTruthy();
   });

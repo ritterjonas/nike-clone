@@ -15,7 +15,7 @@ jest.mock('@react-google-maps/api', () => ({
 
 describe('<Maps />', () => {
   test('renders the map correctly', () => {
-    const lat = 37.7749; // Example coordinates
+    const lat = 37.7749;
     const lng = -122.4194;
     const zoom = 10;
 
