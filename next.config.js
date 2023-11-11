@@ -2,6 +2,7 @@
 const { redirectRules, rewritesRules } = require('./config/routes');
 
 const nextConfig = {
+  output: 'standalone',
   reactStrictMode: true,
   async rewrites() {
     return rewritesRules;
