@@ -58,7 +58,7 @@ export default function News() {
 
   return (
     <NewsContainer>
-      <ArrowButtonLeft onClick={goToPrev}>
+      <ArrowButtonLeft onClick={goToPrev} data-testid='prev-button'>
         <Image
           src='/images/icon_seta_esquerda.svg'
           alt='Left arrow'
@@ -85,7 +85,7 @@ export default function News() {
         ))}
       </NewsContent>
 
-      <ArrowButtonRight onClick={goToNext}>
+      <ArrowButtonRight onClick={goToNext} data-testid='next-button'>
         <Image
           src='/images/icon_seta_direita.svg'
           alt='Right arrow'
