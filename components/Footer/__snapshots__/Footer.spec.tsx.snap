@@ -36,106 +36,106 @@ exports[`<Footer /> matches snapshot 1`] = `
       </button>
     </div>
     <div
-      class="sc-3154c537-0 fTvuef"
+      class="sc-ee751fab-0 fKKYBL"
     >
       <div
-        class="sc-3154c537-1 koTkBj"
+        class="sc-ee751fab-1 iAVJcQ"
       >
         <div
-          class="sc-3154c537-2 jPAotN"
+          class="sc-ee751fab-2 dokCsw"
         >
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-ee751fab-4 dmmEvS"
             href="#"
           >
             Encontre Uma Loja Nike
           </a>
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-ee751fab-4 dmmEvS"
             href="#"
           >
             Cadastre-se para receber novidades
           </a>
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-ee751fab-4 dmmEvS"
             href="#"
           >
             Mapa do site
           </a>
         </div>
         <div
-          class="sc-3154c537-2 jPAotN"
+          class="sc-97d8eb7b-0 mANps"
         >
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-97d8eb7b-1 ejLDlf"
           >
             Ajuda
           </a>
           <div
-            class="sc-3154c537-3 bQgkB"
+            class="sc-ee751fab-3 dKatHz"
           >
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Dúvidas Gerais
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Encontre seu Tamanho
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Entregas
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Pedidos
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Trocas e Devoluções
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Editar consentimento
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Preferências de Cookie
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Pagamentos
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Produtos
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Corporativo
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Fale Conosco
@@ -143,24 +143,24 @@ exports[`<Footer /> matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-3154c537-2 jPAotN"
+          class="sc-97d8eb7b-0 mANps"
         >
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-97d8eb7b-1 ejLDlf"
           >
             Sobre a nike
           </a>
           <div
-            class="sc-3154c537-3 bQgkB"
+            class="sc-ee751fab-3 dKatHz"
           >
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Feito para Jogar
             </a>
             <a
-              class="sc-3154c537-5 jDCPrJ"
+              class="sc-ee751fab-5 cewPMy"
               href="#"
             >
               Sustentabilidade
@@ -168,15 +168,15 @@ exports[`<Footer /> matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-3154c537-2 jPAotN"
+          class="sc-ee751fab-2 dokCsw"
         >
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-ee751fab-4 dmmEvS"
           >
             Redes sociais
           </a>
           <div
-            class="sc-3154c537-7 fnDDLr"
+            class="sc-ee751fab-7 kfyGjo"
           >
             <img
               alt="facebook logo"
@@ -210,12 +210,12 @@ exports[`<Footer /> matches snapshot 1`] = `
             />
           </div>
           <a
-            class="sc-3154c537-4 fYpZJl"
+            class="sc-ee751fab-4 dmmEvS"
           >
             Formas de pagamento
           </a>
           <div
-            class="sc-3154c537-6 jbAezL"
+            class="sc-ee751fab-6 eDSEcw"
           >
             <img
               alt="Mastercard logo"
@@ -291,34 +291,34 @@ exports[`<Footer /> matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="sc-3154c537-8 fXWYaw"
+        class="sc-ee751fab-8 kTieXV"
       >
         <div
-          class="sc-3154c537-9 cJxEoh"
+          class="sc-ee751fab-9 eccrGi"
         >
           <a
-            class="sc-3154c537-10 iRpfLa"
+            class="sc-ee751fab-10 hjIljV"
           >
             Brasil
           </a>
           <a
-            class="sc-3154c537-10 iRpfLa"
+            class="sc-ee751fab-10 hjIljV"
             href="#"
           >
             Política de Privacidade
           </a>
           <a
-            class="sc-3154c537-10 iRpfLa"
+            class="sc-ee751fab-10 hjIljV"
             href="#"
           >
             Termos de Uso
           </a>
         </div>
         <div
-          class="sc-3154c537-9 cJxEoh"
+          class="sc-ee751fab-9 eccrGi"
         >
           <div
-            class="sc-3154c537-11 qbJtA"
+            class="sc-ee751fab-11 lksdLe"
           >
             <p>
               © 2021 Nike. Todos os direitos reservados. Fisia Comércio de Produtos Esportivos

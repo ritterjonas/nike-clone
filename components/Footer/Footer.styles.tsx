@@ -5,6 +5,7 @@ export const FooterContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
+  padding-top: 16px;
   gap: 16px;
 `;
 
@@ -14,19 +15,24 @@ export const FooterContent = styled.div`
   grid-auto-flow: column;
   padding-bottom: 32px;
   border-bottom: 1px solid #4d4d4d;
+
+  @media (max-width: 1023px) {
+    grid-auto-flow: row;
+  }
 `;
 
 export const FooterSection = styled.div`
-  flex: 1 1 25%;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px 0;
 `;
 
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 24px;
 `;
 
 export const LinkTitle = styled.a`
@@ -62,6 +68,11 @@ export const LicenseContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-top: 32px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `;
 
 export const LicenseSection = styled.div`
@@ -81,4 +92,8 @@ export const LicenseText = styled.div`
   text-align: right;
   font-size: 12px;
   line-height: 150%;
+
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
 `;

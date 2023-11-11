@@ -14,6 +14,7 @@ import {
   PaymentIcons,
   SocialIcons,
 } from './Footer.styles';
+import CollapsableSection from './CollapsableSection';
 
 export default function Footer() {
   const socialNames = ['facebook', 'instagram', 'youtube'];
@@ -37,9 +38,7 @@ export default function Footer() {
             <LinkTitle href='#'>Cadastre-se para receber novidades</LinkTitle>
             <LinkTitle href='#'>Mapa do site</LinkTitle>
           </FooterSection>
-          <FooterSection>
-            <LinkTitle>Ajuda</LinkTitle>
-
+          <CollapsableSection title='Ajuda'>
             <FooterLinks>
               <Link href='#'>Dúvidas Gerais</Link>
               <Link href='#'>Encontre seu Tamanho</Link>
@@ -53,15 +52,13 @@ export default function Footer() {
               <Link href='#'>Corporativo</Link>
               <Link href='#'>Fale Conosco</Link>
             </FooterLinks>
-          </FooterSection>
-          <FooterSection>
-            <LinkTitle>Sobre a nike</LinkTitle>
-
+          </CollapsableSection>
+          <CollapsableSection title='Sobre a nike'>
             <FooterLinks>
               <Link href='#'>Feito para Jogar</Link>
               <Link href='#'>Sustentabilidade</Link>
             </FooterLinks>
-          </FooterSection>
+          </CollapsableSection>
           <FooterSection>
             <LinkTitle>Redes sociais</LinkTitle>
 
