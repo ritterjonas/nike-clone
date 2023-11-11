@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react';
 import { useStoresFiltered } from './useStoresFiltered';
-import { useStores } from './useStores'; // Importe o hook useStores ou utilize um mock
+import { useStores } from './useStores';
 import { StoreLocation } from '../types/Stores.types';
 import { useUserLocation } from '../../../hooks/useUserLocation';
 

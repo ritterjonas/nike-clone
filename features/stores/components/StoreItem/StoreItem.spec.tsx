@@ -54,7 +54,7 @@ describe('<StoreItem />', () => {
       fireEvent.click(openMapButton);
     });
 
-    const mapModal = screen.getByTestId('map-modal'); // Assuming you have a data-testid for the MapModal
+    const mapModal = screen.getByTestId('map-modal');
     expect(mapModal).toBeInTheDocument();
   });
 });

@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import axios from 'axios';
-import { useStores } from './useStores'; // Alterar o caminho para o seu arquivo
+import { useStores } from './useStores';
 import { StoreLocation } from '../types/Stores.types';
 
 const TestComponent = () => {

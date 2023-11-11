@@ -44,7 +44,6 @@ describe('CollapsableSection Component', () => {
     const titleElement = screen.getByText('Test Section');
     expect(titleElement).toBeInTheDocument();
 
-    // On non-mobile, the title should be a LinkTitle and content should be rendered
     const linkTitleElement = screen.getByText('Test Section');
     expect(linkTitleElement).toBeInTheDocument();
 
