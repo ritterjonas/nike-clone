@@ -1,16 +1,18 @@
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { memo, useCallback, useEffect, useState } from 'react';
 
-type MarkerType = {
+export type MarkerType = {
   lat: number;
   lng: number;
 };
 
 type StoreItemProps = {
   markers: MarkerType[];
+  activeMarker?: MarkerType;
+  setActiveMarker?: (marker: MarkerType) => void;
 };
 
-function Maps({ markers }: StoreItemProps) {
+function Maps({ markers, activeMarker, setActiveMarker }: StoreItemProps) {
   const [map, setMap] = useState(null);
 
   const { isLoaded } = useJsApiLoader({
@@ -18,16 +20,19 @@ function Maps({ markers }: StoreItemProps) {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || '',
   });
 
-  const fitBounds = useCallback(
-    (map: any) => {
-      const bounds = new google.maps.LatLngBounds();
-      markers.forEach(marker => {
-        bounds.extend(new google.maps.LatLng(marker.lat, marker.lng));
-      });
-      map.fitBounds(bounds);
-    },
-    [markers]
-  );
+  const fitBounds = (map: any) => {
+    const bounds = new google.maps.LatLngBounds();
+    markers.forEach(marker => {
+      bounds.extend(new google.maps.LatLng(marker.lat, marker.lng));
+    });
+    map.fitBounds(bounds);
+
+    setTimeout(() => {
+      if (map.getZoom() > 16) {
+        map.setZoom(16);
+      }
+    }, 100);
+  };
 
   const onLoad = useCallback(
     (map: any) => {
@@ -41,12 +46,6 @@ function Maps({ markers }: StoreItemProps) {
     setMap(null);
   }, []);
 
-  useEffect(() => {
-    if (map) {
-      fitBounds(map);
-    }
-  }, [map, markers, fitBounds]);
-
   return (
     isLoaded && (
       <GoogleMap
@@ -57,13 +56,20 @@ function Maps({ markers }: StoreItemProps) {
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
-        {markers.map(marker => (
-          <Marker
-            position={marker}
-            icon='/images/icon_pin_mapa.svg'
-            key={marker.lat}
-          />
-        ))}
+        {markers.map(marker => {
+          const active =
+            activeMarker?.lat === marker.lat &&
+            activeMarker?.lng === marker.lng;
+          return (
+            <Marker
+              position={marker}
+              icon={`/images/icon_pin_mapa${active ? '_active' : ''}.svg`}
+              key={marker.lat}
+              onClick={() => setActiveMarker && setActiveMarker(marker)}
+              zIndex={active ? 2 : 1}
+            />
+          );
+        })}
       </GoogleMap>
     )
   );

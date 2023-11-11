@@ -12,7 +12,13 @@ export const Container = styled.div`
 
   @media (min-width: 1024px) {
     max-height: 600px;
+    min-height: 500px;
     overflow-y: auto;
     align-items: start;
   }
+`;
+
+export const ListItem = styled.div`
+  width: 100%;
+  cursor: pointer;
 `;

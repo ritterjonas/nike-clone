@@ -8,19 +8,19 @@ import StoresList from './components/StoresList/StoresList';
 import { useStoresFiltered } from './hooks/useStoresFiltered';
 import StoreSearch from './components/StoreSearch/StoreSearch';
 import { useIsMobile } from '@/hooks/useIsMobile';
-import Maps from '@/components/Maps/Maps';
-import { useState } from 'react';
-
-const user = {
-  lat: -16.1236901710532,
-  lng: -48.39933935435456,
-};
+import Maps, { MarkerType } from '@/components/Maps/Maps';
+import { useEffect, useState } from 'react';
 
 export default function Stores() {
+  const [activeMarker, setActiveMarker] = useState<MarkerType | undefined>();
   const [search, setSearch] = useState('');
   const [order, setOrder] = useState('shorter');
   const { stores } = useStoresFiltered(search, order);
   const isMobile = useIsMobile();
+
+  useEffect(() => {
+    setActiveMarker(undefined);
+  }, [search]);
 
   return (
     <Container>
@@ -29,7 +29,13 @@ export default function Stores() {
 
       {stores && (
         <StoresContainer>
-          <StoresList stores={stores} order={order} changeOrder={setOrder} />
+          <StoresList
+            stores={stores}
+            order={order}
+            changeOrder={setOrder}
+            activeMarker={activeMarker}
+            setActiveMarker={marker => setActiveMarker(marker)}
+          />
           {!isMobile && (
             <MapsContainer>
               <Maps
@@ -37,6 +43,9 @@ export default function Stores() {
                   lat: +store.latitude,
                   lng: +store.longitude,
                 }))}
+                activeMarker={activeMarker}
+                setActiveMarker={setActiveMarker}
+                key={search}
               />
             </MapsContainer>
           )}
