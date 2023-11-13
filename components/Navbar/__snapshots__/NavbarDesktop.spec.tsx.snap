@@ -3,10 +3,10 @@
 exports[`<NavbarDesktop /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdbead5f-1 Tapag"
+    class="sc-f04b11a7-1 jEcRNB"
   >
     <div
-      class="sc-bdbead5f-2 efHBR"
+      class="sc-f04b11a7-2 BPDHz"
     >
       <img
         alt="Nike Logo"
@@ -32,37 +32,37 @@ exports[`<NavbarDesktop /> matches snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-bdbead5f-3 gAQxAM"
+      class="sc-f04b11a7-3 bYTPUx"
     >
       <a
-        class="sc-bdbead5f-4 kUVdiI"
+        class="sc-f04b11a7-4 hJCqWt"
         href="#"
       >
         Ajuda
       </a>
       <div
-        class="sc-bdbead5f-5 byFZNl"
+        class="sc-f04b11a7-5 hhezwE"
       />
       <a
-        class="sc-bdbead5f-4 kUVdiI"
+        class="sc-f04b11a7-4 hJCqWt"
         href="#"
       >
         Acompanhe seu pedido
       </a>
       <div
-        class="sc-bdbead5f-5 byFZNl"
+        class="sc-f04b11a7-5 hhezwE"
       />
       <a
-        class="sc-bdbead5f-4 kUVdiI"
+        class="sc-f04b11a7-4 hJCqWt"
         href="#"
       >
         Junte-se a nós
       </a>
       <div
-        class="sc-bdbead5f-5 byFZNl"
+        class="sc-f04b11a7-5 hhezwE"
       />
       <a
-        class="sc-bdbead5f-4 kUVdiI"
+        class="sc-f04b11a7-4 hJCqWt"
         href="#"
       >
         Entrar
@@ -70,7 +70,7 @@ exports[`<NavbarDesktop /> matches snapshot 1`] = `
     </div>
   </div>
   <div
-    class="sc-bdbead5f-0 gEbleI"
+    class="sc-f04b11a7-0 cIGwMl"
     data-testid="navbar-desktop"
   >
     <img
@@ -85,63 +85,63 @@ exports[`<NavbarDesktop /> matches snapshot 1`] = `
       width="40"
     />
     <div
-      class="sc-bdbead5f-8 ghfAYz"
+      class="sc-f04b11a7-8 dPFvcO"
     >
       <div
-        class="sc-bdbead5f-9 lmiXWG"
+        class="sc-f04b11a7-9 iEyEWr"
       >
         <a
-          class="sc-bdbead5f-10 bSvaFL"
+          class="sc-f04b11a7-10 fWcjvC"
           href="#"
         >
           Lançamento
         </a>
       </div>
       <div
-        class="sc-bdbead5f-9 lmiXWG"
+        class="sc-f04b11a7-9 iEyEWr"
       >
         <a
-          class="sc-bdbead5f-10 bSvaFL"
+          class="sc-f04b11a7-10 fWcjvC"
           href="#"
         >
           Masculino
         </a>
       </div>
       <div
-        class="sc-bdbead5f-9 lmiXWG"
+        class="sc-f04b11a7-9 iEyEWr"
       >
         <a
-          class="sc-bdbead5f-10 bSvaFL"
+          class="sc-f04b11a7-10 fWcjvC"
           href="#"
         >
           Feminino
         </a>
       </div>
       <div
-        class="sc-bdbead5f-9 lmiXWG"
+        class="sc-f04b11a7-9 iEyEWr"
       >
         <a
-          class="sc-bdbead5f-10 bSvaFL"
+          class="sc-f04b11a7-10 fWcjvC"
           href="#"
         >
           Infantil
         </a>
       </div>
       <div
-        class="sc-bdbead5f-9 lmiXWG"
+        class="sc-f04b11a7-9 iEyEWr"
       >
         <a
-          class="sc-bdbead5f-10 bSvaFL"
+          class="sc-f04b11a7-10 fWcjvC"
           href="#"
         >
           Ofertas
         </a>
       </div>
       <div
-        class="sc-bdbead5f-9 lmiXWG"
+        class="sc-f04b11a7-9 iEyEWr"
       >
         <a
-          class="sc-bdbead5f-10 bSvaFL"
+          class="sc-f04b11a7-10 fWcjvC"
           href="#"
         >
           SNKRS
@@ -149,10 +149,10 @@ exports[`<NavbarDesktop /> matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="sc-bdbead5f-6 ieLyPj"
+      class="sc-f04b11a7-6 kDAhOm"
     >
       <div
-        class="sc-bdbead5f-11 cUKETF"
+        class="sc-f04b11a7-11 gCtYDt"
       >
         <img
           alt="Search icon"
@@ -165,13 +165,13 @@ exports[`<NavbarDesktop /> matches snapshot 1`] = `
           width="12"
         />
         <input
-          class="sc-bdbead5f-12 fkvgyl"
+          class="sc-f04b11a7-12 fYzbmk"
           placeholder="Buscar"
           type="text"
         />
       </div>
       <a
-        class="sc-bdbead5f-7 kSunjU"
+        class="sc-f04b11a7-7 cQFGed"
         href="#"
       >
         <img

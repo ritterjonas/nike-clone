@@ -6,7 +6,7 @@ exports[`<Footer /> matches snapshot 1`] = `
     data-testid="footer"
   >
     <div
-      class="sc-65e1a52f-0 gSumcn"
+      class="sc-9ebd0886-0 jRIzSE"
     >
       <img
         alt="Nike logo"
@@ -20,122 +20,122 @@ exports[`<Footer /> matches snapshot 1`] = `
         width="100"
       />
       <h3
-        class="sc-65e1a52f-1 fvpAyM"
+        class="sc-9ebd0886-1 cEzPhX"
       >
         RECEBA AS NOVIDADES DA NIKE
       </h3>
       <h4
-        class="sc-65e1a52f-2 hvsCYe"
+        class="sc-9ebd0886-2 eEsmgV"
       >
         Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.
       </h4>
       <button
-        class="sc-c0409c3f-0 biZASl"
+        class="sc-4aee6c77-0 eRPDFh"
       >
         Cadastre-se
       </button>
     </div>
     <div
-      class="sc-ee751fab-0 fKKYBL"
+      class="sc-e06caa2-0 jUggOf"
     >
       <div
-        class="sc-ee751fab-1 iAVJcQ"
+        class="sc-e06caa2-1 bmqCHY"
       >
         <div
-          class="sc-ee751fab-2 dokCsw"
+          class="sc-e06caa2-2 hzsPFE"
         >
           <a
-            class="sc-ee751fab-4 dmmEvS"
+            class="sc-e06caa2-4 kmRrfG"
             href="#"
           >
             Encontre Uma Loja Nike
           </a>
           <a
-            class="sc-ee751fab-4 dmmEvS"
+            class="sc-e06caa2-4 kmRrfG"
             href="#"
           >
             Cadastre-se para receber novidades
           </a>
           <a
-            class="sc-ee751fab-4 dmmEvS"
+            class="sc-e06caa2-4 kmRrfG"
             href="#"
           >
             Mapa do site
           </a>
         </div>
         <div
-          class="sc-97d8eb7b-0 mANps"
+          class="sc-c67a1e70-0 hJsjfQ"
         >
           <a
-            class="sc-97d8eb7b-1 ejLDlf"
+            class="sc-c67a1e70-1 hqbSRL"
           >
             Ajuda
           </a>
           <div
-            class="sc-ee751fab-3 dKatHz"
+            class="sc-e06caa2-3 fLuxCz"
           >
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Dúvidas Gerais
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Encontre seu Tamanho
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Entregas
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Pedidos
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Trocas e Devoluções
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Editar consentimento
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Preferências de Cookie
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Pagamentos
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Produtos
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Corporativo
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Fale Conosco
@@ -143,24 +143,24 @@ exports[`<Footer /> matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-97d8eb7b-0 mANps"
+          class="sc-c67a1e70-0 hJsjfQ"
         >
           <a
-            class="sc-97d8eb7b-1 ejLDlf"
+            class="sc-c67a1e70-1 hqbSRL"
           >
             Sobre a nike
           </a>
           <div
-            class="sc-ee751fab-3 dKatHz"
+            class="sc-e06caa2-3 fLuxCz"
           >
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Feito para Jogar
             </a>
             <a
-              class="sc-ee751fab-5 cewPMy"
+              class="sc-e06caa2-5 hgrqZO"
               href="#"
             >
               Sustentabilidade
@@ -168,15 +168,15 @@ exports[`<Footer /> matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-ee751fab-2 dokCsw"
+          class="sc-e06caa2-2 hzsPFE"
         >
           <a
-            class="sc-ee751fab-4 dmmEvS"
+            class="sc-e06caa2-4 kmRrfG"
           >
             Redes sociais
           </a>
           <div
-            class="sc-ee751fab-7 kfyGjo"
+            class="sc-e06caa2-7 jgqxKg"
           >
             <a
               href="#"
@@ -222,12 +222,12 @@ exports[`<Footer /> matches snapshot 1`] = `
             </a>
           </div>
           <a
-            class="sc-ee751fab-4 dmmEvS"
+            class="sc-e06caa2-4 kmRrfG"
           >
             Formas de pagamento
           </a>
           <div
-            class="sc-ee751fab-6 eDSEcw"
+            class="sc-e06caa2-6 dNQxyk"
           >
             <img
               alt="Mastercard logo"
@@ -303,34 +303,34 @@ exports[`<Footer /> matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="sc-ee751fab-8 kTieXV"
+        class="sc-e06caa2-8 dJycVB"
       >
         <div
-          class="sc-ee751fab-9 eccrGi"
+          class="sc-e06caa2-9 hvWFym"
         >
           <a
-            class="sc-ee751fab-10 hjIljV"
+            class="sc-e06caa2-10 hryyeh"
           >
             Brasil
           </a>
           <a
-            class="sc-ee751fab-10 hjIljV"
+            class="sc-e06caa2-10 hryyeh"
             href="#"
           >
             Política de Privacidade
           </a>
           <a
-            class="sc-ee751fab-10 hjIljV"
+            class="sc-e06caa2-10 hryyeh"
             href="#"
           >
             Termos de Uso
           </a>
         </div>
         <div
-          class="sc-ee751fab-9 eccrGi"
+          class="sc-e06caa2-9 hvWFym"
         >
           <div
-            class="sc-ee751fab-11 lksdLe"
+            class="sc-e06caa2-11 enhxke"
           >
             <p>
               © 2021 Nike. Todos os direitos reservados. Fisia Comércio de Produtos Esportivos
