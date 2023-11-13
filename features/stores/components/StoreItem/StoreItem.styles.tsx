@@ -51,7 +51,7 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  border-radius: 8px;
+  border-radius: ${props => props.theme.border.radius8};
   background: ${props => props.theme.colors.neutral100};
 `;
 

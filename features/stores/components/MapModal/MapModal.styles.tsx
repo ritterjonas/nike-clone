@@ -10,7 +10,7 @@ export const Modal = styled.div`
   background: ${props => props.theme.colors.neutral100};
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: ${props => props.theme.border.radius8};
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   z-index: 401;

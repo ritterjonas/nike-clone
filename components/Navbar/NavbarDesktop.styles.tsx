@@ -86,7 +86,7 @@ export const InputSearchContainer = styled.div`
   box-sizing: border-box;
   max-width: 170px;
   background-color: ${props => props.theme.colors.neutral200};
-  border-radius: 200px;
+  border-radius: ${props => props.theme.border.radius50};
   padding: 10px 16px;
   display: flex;
   align-items: center;

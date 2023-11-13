@@ -31,7 +31,7 @@ export const NewsItemContent = styled.div`
 `;
 
 const ArrowButton = styled.div`
-  border-radius: 12px;
+  border-radius: ${props => props.theme.border.radius12};
   height: 24px;
   width: 24px;
   background-color: ${props => props.theme.colors.neutral100};

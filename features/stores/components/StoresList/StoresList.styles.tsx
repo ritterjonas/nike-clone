@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: end;
   gap: 32px;
-  border-radius: 8px;
+  border-radius: ${props => props.theme.border.radius8};
   background: ${props => props.theme.colors.neutral200};
   flex: 1 1 0px;
 `;

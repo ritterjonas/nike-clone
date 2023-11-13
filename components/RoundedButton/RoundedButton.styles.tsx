@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const RoundedButton = styled.button`
-  border-radius: 50px;
+  border-radius: ${props => props.theme.border.radius50};
   background: ${props => props.theme.colors.primary};
   display: flex;
   padding: 16px 24px;

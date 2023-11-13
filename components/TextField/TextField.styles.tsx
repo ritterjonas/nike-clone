@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InputContainer = styled.div`
   background-color: ${props => props.theme.colors.neutral100};
   border: 1px solid ${props => props.theme.colors.neutral300};
-  border-radius: 200px;
+  border-radius: ${props => props.theme.border.radius50};
   padding: 16px;
   display: flex;
   align-items: center;

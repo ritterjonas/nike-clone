@@ -22,6 +22,11 @@ const theme = {
     size24: '24px',
     size32: '32px',
   },
+  border: {
+    radius8: '8px',
+    radius12: '12px',
+    radius50: '50px',
+  },
 };
 
 const Theme = ({ children }: PropsWithChildren) => (
