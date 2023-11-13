@@ -1,3 +1,4 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const NavbarComponentDesktop = styled.div`
@@ -9,7 +10,7 @@ export const NavbarComponentDesktop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${props => props.theme.colors.neutral100};
+  background-color: ${colors.neutral100};
   min-height: 72px;
   padding: 0 40px;
 `;
@@ -20,7 +21,7 @@ export const NavbarAccount = styled.div`
   right: 0px;
   top: 0px;
   z-index: 100;
-  background: ${props => props.theme.colors.neutral200};
+  background: ${colors.neutral200};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,31 +30,31 @@ export const NavbarAccount = styled.div`
 
 export const NavbarAccountImages = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.layout20};
+  gap: ${spacing.layout20};
 `;
 
 export const NavbarAccountItems = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.layout16};
+  gap: ${spacing.layout16};
   align-items: center;
 `;
 
 export const NavbarAccountItem = styled.a`
-  color: ${props => props.theme.colors.neutral500};
-  font-size: ${props => props.theme.font.size12};
+  color: ${colors.neutral500};
+  font-size: ${font.size12};
   text-decoration: none;
 `;
 
 export const NavbarAccountSeparator = styled.div`
   height: 16px;
   width: 1px;
-  background: ${props => props.theme.colors.neutral500};
+  background: ${colors.neutral500};
 `;
 
 export const NavbarIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: ${props => props.theme.spacing.layout32};
+  gap: ${spacing.layout32};
 `;
 
 export const NavbarIcon = styled.a`
@@ -67,16 +68,16 @@ export const NavbarMenus = styled.div`
 export const MenuItem = styled.div`
   padding: 22px 12px;
   cursor: pointer;
-  border-bottom: 2px solid ${props => props.theme.colors.neutral100};
+  border-bottom: 2px solid ${colors.neutral100};
 
   &:hover {
-    border-color: ${props => props.theme.colors.primary};
+    border-color: ${colors.primary};
   }
 `;
 
 export const MenuItemLink = styled.a`
-  color: ${props => props.theme.colors.primary};
-  font-size: ${props => props.theme.font.size16};
+  color: ${colors.primary};
+  font-size: ${font.size16};
   font-weight: 500;
   line-height: 150%;
   text-decoration: none;
@@ -85,25 +86,25 @@ export const MenuItemLink = styled.a`
 export const InputSearchContainer = styled.div`
   box-sizing: border-box;
   max-width: 170px;
-  background-color: ${props => props.theme.colors.neutral200};
-  border-radius: ${props => props.theme.border.radius50};
+  background-color: ${colors.neutral200};
+  border-radius: ${border.radius50};
   padding: 10px 16px;
   display: flex;
   align-items: center;
-  gap: ${props => props.theme.spacing.layout8};
+  gap: ${spacing.layout8};
   flex: 1;
 
   &:hover {
-    background: ${props => props.theme.colors.neutral300};
+    background: ${colors.neutral300};
   }
 `;
 
 export const InputText = styled.input`
   background: transparent;
-  color: ${props => props.theme.colors.neutral500};
+  color: ${colors.neutral500};
   border: none;
   outline: none;
   flex: 1;
-  font-size: ${props => props.theme.font.size14};
+  font-size: ${font.size14};
   width: 100%;
 `;

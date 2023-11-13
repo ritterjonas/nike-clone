@@ -1,12 +1,13 @@
+import { colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-  background-color: ${props => props.theme.colors.neutral700};
+  background-color: ${colors.neutral700};
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
   padding-top: 16px;
-  gap: ${props => props.theme.spacing.layout16};
+  gap: ${spacing.layout16};
 `;
 
 export const FooterContent = styled.div`
@@ -14,7 +15,7 @@ export const FooterContent = styled.div`
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
   padding-bottom: 32px;
-  border-bottom: 1px solid ${props => props.theme.colors.neutral600};
+  border-bottom: 1px solid ${colors.neutral600};
 
   @media (max-width: 1023px) {
     grid-auto-flow: row;
@@ -24,20 +25,20 @@ export const FooterContent = styled.div`
 export const FooterSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${props => props.theme.spacing.layout16};
+  gap: ${spacing.layout16};
   padding: 24px 0;
 `;
 
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${props => props.theme.spacing.layout8};
+  gap: ${spacing.layout8};
   margin-bottom: 24px;
 `;
 
 export const LinkTitle = styled.a`
-  color: ${props => props.theme.colors.neutral100};
-  font-size: ${props => props.theme.font.size16};
+  color: ${colors.neutral100};
+  font-size: ${font.size16};
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -45,8 +46,8 @@ export const LinkTitle = styled.a`
 `;
 
 export const Link = styled.a`
-  color: ${props => props.theme.colors.neutral200};
-  font-size: ${props => props.theme.font.size12};
+  color: ${colors.neutral200};
+  font-size: ${font.size12};
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
@@ -54,13 +55,13 @@ export const Link = styled.a`
 
 export const PaymentIcons = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.layout4};
+  gap: ${spacing.layout4};
   flex-wrap: wrap;
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.layout8};
+  gap: ${spacing.layout8};
 `;
 
 export const LicenseContainer = styled.div`
@@ -71,26 +72,26 @@ export const LicenseContainer = styled.div`
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: ${props => props.theme.spacing.layout32};
+    gap: ${spacing.layout32};
   }
 `;
 
 export const LicenseSection = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.layout48};
+  gap: ${spacing.layout48};
 `;
 
 export const LicenseLink = styled.a`
-  color: ${props => props.theme.colors.neutral200};
+  color: ${colors.neutral200};
   text-decoration: none;
-  font-size: ${props => props.theme.font.size12};
+  font-size: ${font.size12};
 `;
 
 export const LicenseText = styled.div`
-  color: ${props => props.theme.colors.neutral300};
+  color: ${colors.neutral300};
   text-decoration: none;
   text-align: right;
-  font-size: ${props => props.theme.font.size12};
+  font-size: ${font.size12};
   line-height: 150%;
 
   @media (max-width: 1023px) {

@@ -1,8 +1,9 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const NewsContainer = styled.div`
   padding: 8px 16px;
-  background-color: ${props => props.theme.colors.neutral200};
+  background-color: ${colors.neutral200};
   position: relative;
   overflow: hidden;
 `;
@@ -22,19 +23,19 @@ export const NewsItemContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: ${props => props.theme.spacing.layout24};
+  gap: ${spacing.layout24};
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: ${props => props.theme.spacing.layout4};
+    gap: ${spacing.layout4};
   }
 `;
 
 const ArrowButton = styled.div`
-  border-radius: ${props => props.theme.border.radius12};
+  border-radius: ${border.radius12};
   height: 24px;
   width: 24px;
-  background-color: ${props => props.theme.colors.neutral100};
+  background-color: ${colors.neutral100};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,9 +54,9 @@ export const ArrowButtonRight = styled(ArrowButton)`
 `;
 
 export const Text = styled.span`
-  font-size: ${props => props.theme.font.size12};
+  font-size: ${font.size12};
 `;
 
 export const Link = styled.a`
-  color: ${props => props.theme.colors.neutral700};
+  color: ${colors.neutral700};
 `;

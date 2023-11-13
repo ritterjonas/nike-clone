@@ -1,3 +1,4 @@
+import { colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const NavbarComponent = styled.div`
@@ -10,14 +11,14 @@ export const NavbarComponent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  background-color: ${props => props.theme.colors.neutral100};
+  background-color: ${colors.neutral100};
   min-height: 66px;
 `;
 
 export const NavbarIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: ${props => props.theme.spacing.layout32};
+  gap: ${spacing.layout32};
 `;
 
 export const NavbarIcon = styled.a`
@@ -28,7 +29,7 @@ export const DrawerContainer = styled.div``;
 
 export const Drawer = styled.aside`
   overflow-y: auto;
-  background: ${props => props.theme.colors.neutral100};
+  background: ${colors.neutral100};
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -44,14 +45,14 @@ export const Drawer = styled.aside`
 export const DrawerItem = styled.a`
   text-decoration: none;
   cursor: pointer;
-  color: ${props => props.theme.colors.neutral700};
+  color: ${colors.neutral700};
   padding: 24px 0;
-  font-size: ${props => props.theme.font.size20};
+  font-size: ${font.size20};
   font-weight: 500;
 `;
 
 export const Overlay = styled.div`
-  background: ${props => props.theme.colors.neutral700};
+  background: ${colors.neutral700};
   opacity: 0.7;
   position: fixed;
   inset: 0px;

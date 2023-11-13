@@ -1,3 +1,4 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const SelectContainer = styled.div`
@@ -6,17 +7,17 @@ export const SelectContainer = styled.div`
 `;
 
 export const SelectBox = styled.div`
-  font-size: ${props => props.theme.font.size14};
+  font-size: ${font.size14};
   display: flex;
-  gap: ${props => props.theme.spacing.layout16};
+  gap: ${spacing.layout16};
   align-items: center;
   cursor: pointer;
 `;
 
 export const SelectPopover = styled.div`
   position: absolute;
-  background: ${props => props.theme.colors.neutral100};
-  border-radius: ${props => props.theme.border.radius8};
+  background: ${colors.neutral100};
+  border-radius: ${border.radius8};
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
   margin-top: 16px;
   z-index: 301;
@@ -30,11 +31,11 @@ export const SelectOverlay = styled.div`
 
 export const SelectItem = styled.div`
   padding: 20px 16px;
-  font-size: ${props => props.theme.font.size12};
+  font-size: ${font.size12};
   cursor: pointer;
-  border-radius: ${props => props.theme.border.radius8};
+  border-radius: ${border.radius8};
 
   &:hover {
-    background: ${props => props.theme.colors.neutral200};
+    background: ${colors.neutral200};
   }
 `;

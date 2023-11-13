@@ -1,3 +1,4 @@
+import { border, colors } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const Modal = styled.div`
@@ -7,17 +8,17 @@ export const Modal = styled.div`
   width: calc(100vw - 40px);
   height: calc(100vh - 40px);
   margin: 20px;
-  background: ${props => props.theme.colors.neutral100};
+  background: ${colors.neutral100};
   display: flex;
   flex-direction: column;
-  border-radius: ${props => props.theme.border.radius8};
+  border-radius: ${border.radius8};
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   z-index: 401;
 `;
 
 export const ModalOverlay = styled.div`
-  background: ${props => props.theme.colors.neutral700};
+  background: ${colors.neutral700};
   opacity: 0.3;
   position: fixed;
   inset: 0px;
