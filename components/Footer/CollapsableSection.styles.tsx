@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: ${props => props.theme.spacing.layout16};
 `;
 
 export const LinkTitle = styled.a`

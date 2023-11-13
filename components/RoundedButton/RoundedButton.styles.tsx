@@ -7,7 +7,7 @@ export const RoundedButton = styled.button`
   padding: 16px 24px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
   color: white;
   outline: none;
   border: none;

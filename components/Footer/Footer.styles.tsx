@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   box-sizing: border-box;
   padding: 40px;
   padding-top: 16px;
-  gap: 16px;
+  gap: ${props => props.theme.spacing.layout16};
 `;
 
 export const FooterContent = styled.div`
@@ -24,14 +24,14 @@ export const FooterContent = styled.div`
 export const FooterSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: ${props => props.theme.spacing.layout16};
   padding: 24px 0;
 `;
 
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
   margin-bottom: 24px;
 `;
 
@@ -54,13 +54,13 @@ export const Link = styled.a`
 
 export const PaymentIcons = styled.div`
   display: flex;
-  gap: 4px;
+  gap: ${props => props.theme.spacing.layout4};
   flex-wrap: wrap;
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
 `;
 
 export const LicenseContainer = styled.div`
@@ -71,13 +71,13 @@ export const LicenseContainer = styled.div`
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: 32px;
+    gap: ${props => props.theme.spacing.layout32};
   }
 `;
 
 export const LicenseSection = styled.div`
   display: flex;
-  gap: 48px;
+  gap: ${props => props.theme.spacing.layout48};
 `;
 
 export const LicenseLink = styled.a`

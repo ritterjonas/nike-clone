@@ -5,7 +5,7 @@ export const Container = styled.div`
   padding: 16px 24px;
   flex-direction: column;
   align-items: end;
-  gap: 32px;
+  gap: ${props => props.theme.spacing.layout32};
   border-radius: ${props => props.theme.border.radius8};
   background: ${props => props.theme.colors.neutral200};
   flex: 1 1 0px;

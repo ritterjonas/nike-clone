@@ -17,7 +17,7 @@ export const NavbarComponent = styled.div`
 export const NavbarIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: ${props => props.theme.spacing.layout32};
 `;
 
 export const NavbarIcon = styled.a`

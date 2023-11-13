@@ -7,7 +7,7 @@ export const InputContainer = styled.div`
   padding: 16px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
   flex: 1;
 `;
 

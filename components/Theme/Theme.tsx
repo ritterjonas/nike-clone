@@ -27,6 +27,20 @@ const theme = {
     radius12: '12px',
     radius50: '50px',
   },
+  spacing: {
+    layout4: '4px',
+    layout8: '8px',
+    layout12: '12px',
+    layout16: '16px',
+    layout20: '20px',
+    layout24: '24px',
+    layout28: '28px',
+    layout32: '32px',
+    layout36: '36px',
+    layout40: '40px',
+    layout44: '44px',
+    layout48: '48px',
+  },
 };
 
 const Theme = ({ children }: PropsWithChildren) => (

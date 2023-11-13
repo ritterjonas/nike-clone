@@ -8,7 +8,7 @@ export const SelectContainer = styled.div`
 export const SelectBox = styled.div`
   font-size: ${props => props.theme.font.size14};
   display: flex;
-  gap: 16px;
+  gap: ${props => props.theme.spacing.layout16};
   align-items: center;
   cursor: pointer;
 `;

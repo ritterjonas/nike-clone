@@ -22,11 +22,11 @@ export const NewsItemContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: ${props => props.theme.spacing.layout24};
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: 4px;
+    gap: ${props => props.theme.spacing.layout4};
   }
 `;
 

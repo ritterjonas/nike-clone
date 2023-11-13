@@ -4,5 +4,5 @@ export const SearchContainer = styled.div`
   max-width: 600px;
   width: 100%;
   display: flex;
-  gap: 24px;
+  gap: ${props => props.theme.spacing.layout24};
 `;

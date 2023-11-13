@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: ${props => props.theme.spacing.layout40};
 `;
 
 export const StoresContainer = styled.div`
@@ -14,7 +14,7 @@ export const StoresContainer = styled.div`
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
-  gap: 32px;
+  gap: ${props => props.theme.spacing.layout32};
 `;
 
 export const MapsContainer = styled.div`

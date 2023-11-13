@@ -29,12 +29,12 @@ export const NavbarAccount = styled.div`
 
 export const NavbarAccountImages = styled.div`
   display: flex;
-  gap: 18px;
+  gap: ${props => props.theme.spacing.layout20};
 `;
 
 export const NavbarAccountItems = styled.div`
   display: flex;
-  gap: 16px;
+  gap: ${props => props.theme.spacing.layout16};
   align-items: center;
 `;
 
@@ -53,7 +53,7 @@ export const NavbarAccountSeparator = styled.div`
 export const NavbarIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: ${props => props.theme.spacing.layout32};
 `;
 
 export const NavbarIcon = styled.a`
@@ -90,7 +90,7 @@ export const InputSearchContainer = styled.div`
   padding: 10px 16px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
   flex: 1;
 
   &:hover {

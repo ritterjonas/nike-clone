@@ -8,7 +8,7 @@ export const ReceiveNewsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: ${props => props.theme.spacing.layout16};
 `;
 
 export const ReceiveNewsTitle = styled.h3`

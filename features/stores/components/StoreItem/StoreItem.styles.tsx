@@ -29,7 +29,7 @@ export const SeeMap = styled.button`
   margin-top: 8px;
   padding: 0;
   display: flex;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
   border: none;
   background: transparent;
   outline: none;
@@ -50,7 +50,7 @@ export const Card = styled.div`
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: ${props => props.theme.spacing.layout8};
   border-radius: ${props => props.theme.border.radius8};
   background: ${props => props.theme.colors.neutral100};
 `;
