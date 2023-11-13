@@ -31,7 +31,7 @@ export const NewsItemContent = styled.div`
 `;
 
 const ArrowButton = styled.div`
-  border-radius: 50%;
+  border-radius: 12px;
   height: 24px;
   width: 24px;
   background-color: ${props => props.theme.colors.neutral100};
@@ -53,7 +53,7 @@ export const ArrowButtonRight = styled(ArrowButton)`
 `;
 
 export const Text = styled.span`
-  font-size: 12px;
+  font-size: ${props => props.theme.font.size12};
 `;
 
 export const Link = styled.a`

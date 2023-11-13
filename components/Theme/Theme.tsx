@@ -12,6 +12,16 @@ const theme = {
     primary: '#000',
     success300: '#061',
   },
+  font: {
+    size12: '12px',
+    size14: '14px',
+    size16: '16px',
+    size18: '18px',
+    size20: '20px',
+    size22: '22px',
+    size24: '24px',
+    size32: '32px',
+  },
 };
 
 const Theme = ({ children }: PropsWithChildren) => (

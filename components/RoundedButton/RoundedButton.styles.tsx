@@ -12,7 +12,7 @@ export const RoundedButton = styled.button`
   outline: none;
   border: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: ${props => props.theme.font.size16};
   cursor: pointer;
   transition: 0.2s;
 

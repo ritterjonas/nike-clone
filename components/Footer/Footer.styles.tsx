@@ -37,7 +37,7 @@ export const FooterLinks = styled.div`
 
 export const LinkTitle = styled.a`
   color: ${props => props.theme.colors.neutral100};
-  font-size: 16px;
+  font-size: ${props => props.theme.font.size16};
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -46,7 +46,7 @@ export const LinkTitle = styled.a`
 
 export const Link = styled.a`
   color: ${props => props.theme.colors.neutral200};
-  font-size: 12px;
+  font-size: ${props => props.theme.font.size12};
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
@@ -83,14 +83,14 @@ export const LicenseSection = styled.div`
 export const LicenseLink = styled.a`
   color: ${props => props.theme.colors.neutral200};
   text-decoration: none;
-  font-size: 12px;
+  font-size: ${props => props.theme.font.size12};
 `;
 
 export const LicenseText = styled.div`
   color: ${props => props.theme.colors.neutral300};
   text-decoration: none;
   text-align: right;
-  font-size: 12px;
+  font-size: ${props => props.theme.font.size12};
   line-height: 150%;
 
   @media (max-width: 1023px) {

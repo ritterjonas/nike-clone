@@ -8,7 +8,7 @@ export const FooterSection = styled.div`
 
 export const LinkTitle = styled.a`
   color: ${props => props.theme.colors.neutral100};
-  font-size: 16px;
+  font-size: ${props => props.theme.font.size16};
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -27,13 +27,13 @@ export const Collapsable = styled.div`
 
 export const CollapsableTitle = styled.div`
   color: ${props => props.theme.colors.neutral100};
-  font-size: 14px;
+  font-size: ${props => props.theme.font.size14};
   text-transform: uppercase;
 `;
 
 export const CollapsableIcon = styled.div`
   color: ${props => props.theme.colors.neutral100};
-  font-size: 32px;
+  font-size: ${props => props.theme.font.size32};
   font-weight: 100;
   line-height: 14px;
 `;

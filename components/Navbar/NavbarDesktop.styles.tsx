@@ -40,7 +40,7 @@ export const NavbarAccountItems = styled.div`
 
 export const NavbarAccountItem = styled.a`
   color: ${props => props.theme.colors.neutral500};
-  font-size: 12px;
+  font-size: ${props => props.theme.font.size12};
   text-decoration: none;
 `;
 
@@ -76,7 +76,7 @@ export const MenuItem = styled.div`
 
 export const MenuItemLink = styled.a`
   color: ${props => props.theme.colors.primary};
-  font-size: 16px;
+  font-size: ${props => props.theme.font.size16};
   font-weight: 500;
   line-height: 150%;
   text-decoration: none;
@@ -104,6 +104,6 @@ export const InputText = styled.input`
   border: none;
   outline: none;
   flex: 1;
-  font-size: 14px;
+  font-size: ${props => props.theme.font.size14};
   width: 100%;
 `;

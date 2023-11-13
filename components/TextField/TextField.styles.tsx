@@ -16,5 +16,5 @@ export const InputText = styled.input`
   border: none;
   outline: none;
   flex: 1;
-  font-size: 16px;
+  font-size: ${props => props.theme.font.size16};
 `;

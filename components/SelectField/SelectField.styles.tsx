@@ -6,7 +6,7 @@ export const SelectContainer = styled.div`
 `;
 
 export const SelectBox = styled.div`
-  font-size: 14px;
+  font-size: ${props => props.theme.font.size14};
   display: flex;
   gap: 16px;
   align-items: center;
@@ -30,7 +30,7 @@ export const SelectOverlay = styled.div`
 
 export const SelectItem = styled.div`
   padding: 20px 16px;
-  font-size: 12px;
+  font-size: ${props => props.theme.font.size12};
   cursor: pointer;
   border-radius: 8px;
 

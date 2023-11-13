@@ -22,7 +22,7 @@ export const MapsContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 32px;
+  font-size: ${props => props.theme.font.size32};
   font-weight: 500;
   line-height: 120%;
   text-align: center;

@@ -13,14 +13,14 @@ export const ReceiveNewsContainer = styled.div`
 
 export const ReceiveNewsTitle = styled.h3`
   font-weight: 500;
-  font-size: 18px;
+  font-size: ${props => props.theme.font.size18};
   color: ${props => props.theme.colors.neutral700};
   line-height: 120%;
   text-align: center;
 `;
 
 export const ReceiveNewsSubtitle = styled.h4`
-  font-size: 16px;
+  font-size: ${props => props.theme.font.size16};
   color: ${props => props.theme.colors.neutral700};
   line-height: 150%;
   text-align: center;

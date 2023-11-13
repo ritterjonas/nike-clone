@@ -46,7 +46,7 @@ export const DrawerItem = styled.a`
   cursor: pointer;
   color: ${props => props.theme.colors.neutral700};
   padding: 24px 0;
-  font-size: 20px;
+  font-size: ${props => props.theme.font.size20};
   font-weight: 500;
 `;
 
