@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: end;
   gap: 32px;
   border-radius: 8px;
-  background: #f7f7f7;
+  background: ${props => props.theme.colors.neutral200};
   flex: 1 1 0px;
 `;
 

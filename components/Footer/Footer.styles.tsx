@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-  background-color: #1a1a1a;
+  background-color: ${props => props.theme.colors.neutral700};
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
@@ -14,7 +14,7 @@ export const FooterContent = styled.div`
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
   padding-bottom: 32px;
-  border-bottom: 1px solid #4d4d4d;
+  border-bottom: 1px solid ${props => props.theme.colors.neutral600};
 
   @media (max-width: 1023px) {
     grid-auto-flow: row;
@@ -36,7 +36,7 @@ export const FooterLinks = styled.div`
 `;
 
 export const LinkTitle = styled.a`
-  color: #fff;
+  color: ${props => props.theme.colors.neutral100};
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
@@ -45,7 +45,7 @@ export const LinkTitle = styled.a`
 `;
 
 export const Link = styled.a`
-  color: #f7f7f7;
+  color: ${props => props.theme.colors.neutral200};
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
@@ -81,13 +81,13 @@ export const LicenseSection = styled.div`
 `;
 
 export const LicenseLink = styled.a`
-  color: #f7f7f7;
+  color: ${props => props.theme.colors.neutral200};
   text-decoration: none;
   font-size: 12px;
 `;
 
 export const LicenseText = styled.div`
-  color: #d6d6d6;
+  color: ${props => props.theme.colors.neutral300};
   text-decoration: none;
   text-align: right;
   font-size: 12px;

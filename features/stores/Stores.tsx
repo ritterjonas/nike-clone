@@ -20,7 +20,7 @@ export default function Stores() {
 
   useEffect(() => {
     setActiveMarker(undefined);
-  }, [search]);
+  }, [search, order]);
 
   return (
     <Container>
@@ -45,7 +45,7 @@ export default function Stores() {
                 }))}
                 activeMarker={activeMarker}
                 setActiveMarker={setActiveMarker}
-                key={search}
+                key={`${search}${order}`}
               />
             </MapsContainer>
           )}

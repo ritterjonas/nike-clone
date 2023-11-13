@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const InputContainer = styled.div`
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
+  background-color: ${props => props.theme.colors.neutral100};
+  border: 1px solid ${props => props.theme.colors.neutral300};
   border-radius: 200px;
   padding: 16px;
   display: flex;
@@ -12,7 +12,7 @@ export const InputContainer = styled.div`
 `;
 
 export const InputText = styled.input`
-  color: #737373;
+  color: ${props => props.theme.colors.neutral500};
   border: none;
   outline: none;
   flex: 1;

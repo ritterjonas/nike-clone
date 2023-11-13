@@ -10,7 +10,7 @@ export const NavbarComponent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.neutral100};
   min-height: 66px;
 `;
 
@@ -28,7 +28,7 @@ export const DrawerContainer = styled.div``;
 
 export const Drawer = styled.aside`
   overflow-y: auto;
-  background: #fff;
+  background: ${props => props.theme.colors.neutral100};
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -44,14 +44,14 @@ export const Drawer = styled.aside`
 export const DrawerItem = styled.a`
   text-decoration: none;
   cursor: pointer;
-  color: #1a1a1a;
+  color: ${props => props.theme.colors.neutral700};
   padding: 24px 0;
   font-size: 20px;
   font-weight: 500;
 `;
 
 export const Overlay = styled.div`
-  background: #111;
+  background: ${props => props.theme.colors.neutral700};
   opacity: 0.7;
   position: fixed;
   inset: 0px;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NewsContainer = styled.div`
   padding: 8px 16px;
-  background-color: #f7f7f7;
+  background-color: ${props => props.theme.colors.neutral200};
   position: relative;
   overflow: hidden;
 `;
@@ -34,7 +34,7 @@ const ArrowButton = styled.div`
   border-radius: 50%;
   height: 24px;
   width: 24px;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.neutral100};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,5 +57,5 @@ export const Text = styled.span`
 `;
 
 export const Link = styled.a`
-  color: #000;
+  color: ${props => props.theme.colors.neutral700};
 `;

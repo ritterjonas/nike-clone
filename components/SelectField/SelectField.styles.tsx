@@ -15,7 +15,7 @@ export const SelectBox = styled.div`
 
 export const SelectPopover = styled.div`
   position: absolute;
-  background: #fff;
+  background: ${props => props.theme.colors.neutral100};
   border-radius: 8px;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
   margin-top: 16px;
@@ -35,6 +35,6 @@ export const SelectItem = styled.div`
   border-radius: 8px;
 
   &:hover {
-    background: #f7f7f7;
+    background: ${props => props.theme.colors.neutral200};
   }
 `;

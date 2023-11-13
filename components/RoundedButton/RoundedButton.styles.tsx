@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const RoundedButton = styled.button`
   border-radius: 50px;
-  background: #000;
+  background: ${props => props.theme.colors.primary};
   display: flex;
   padding: 16px 24px;
   justify-content: center;
