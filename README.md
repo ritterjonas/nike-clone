@@ -4,6 +4,10 @@
 
 The project is a web page that, based on the customer's geographical location and the list of NIKE stores, calculates the distances to the three nearest stores for the customer to pick up their product.
 
+## Demo
+
+Check out the live demo of the application at [https://eng-gruposbf-frontend-javascript-nu.vercel.app](https://eng-gruposbf-frontend-javascript-nu.vercel.app).
+
 ## Technologies Used
 
 - **Next.js 14:** React framework for building fast and scalable web applications.
