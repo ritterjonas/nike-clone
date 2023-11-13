@@ -5,7 +5,7 @@ export const RoundedButton = styled.button`
   border-radius: ${border.radius50};
   background: ${colors.primary};
   display: flex;
-  padding: 16px 24px;
+  padding: ${spacing.layout16} ${spacing.layout24};
   justify-content: center;
   align-items: center;
   gap: ${spacing.layout8};

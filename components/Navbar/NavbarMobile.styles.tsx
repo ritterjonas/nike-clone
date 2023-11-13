@@ -10,7 +10,7 @@ export const NavbarComponent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 ${spacing.layout16};
   background-color: ${colors.neutral100};
   min-height: 66px;
 `;
@@ -38,7 +38,7 @@ export const Drawer = styled.aside`
   top: 0px;
   z-index: 401;
   right: 0px;
-  padding: 16px 24px;
+  padding: ${spacing.layout16} ${spacing.layout24};
   box-sizing: border-box;
 `;
 
@@ -46,7 +46,7 @@ export const DrawerItem = styled.a`
   text-decoration: none;
   cursor: pointer;
   color: ${colors.neutral700};
-  padding: 24px 0;
+  padding: ${spacing.layout24} 0;
   font-size: ${font.size20};
   font-weight: 500;
 `;

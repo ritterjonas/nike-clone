@@ -14,11 +14,11 @@ export const LinkTitle = styled.a`
   line-height: 150%;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 24px;
+  padding-top: ${spacing.layout24};
 `;
 
 export const Collapsable = styled.div`
-  padding: 20px 0;
+  padding: ${spacing.layout20} 0;
   border-bottom: 1px solid ${colors.neutral100};
   border-top: 1px solid ${colors.neutral100};
   cursor: pointer;
@@ -40,5 +40,5 @@ export const CollapsableIcon = styled.div`
 `;
 
 export const CollapsableContent = styled.div`
-  padding: 0 16px;
+  padding: 0 ${spacing.layout16};
 `;

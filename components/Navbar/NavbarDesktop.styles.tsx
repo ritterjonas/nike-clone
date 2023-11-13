@@ -12,7 +12,7 @@ export const NavbarComponentDesktop = styled.div`
   align-items: center;
   background-color: ${colors.neutral100};
   min-height: 72px;
-  padding: 0 40px;
+  padding: 0 ${spacing.layout40};
 `;
 
 export const NavbarAccount = styled.div`
@@ -25,7 +25,7 @@ export const NavbarAccount = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
+  padding: ${spacing.layout16} ${spacing.layout40};
 `;
 
 export const NavbarAccountImages = styled.div`
@@ -46,7 +46,7 @@ export const NavbarAccountItem = styled.a`
 `;
 
 export const NavbarAccountSeparator = styled.div`
-  height: 16px;
+  height: ${spacing.layout16};
   width: 1px;
   background: ${colors.neutral500};
 `;
@@ -66,7 +66,7 @@ export const NavbarMenus = styled.div`
 `;
 
 export const MenuItem = styled.div`
-  padding: 22px 12px;
+  padding: ${spacing.layout22} ${spacing.layout12};
   cursor: pointer;
   border-bottom: 2px solid ${colors.neutral100};
 
@@ -88,7 +88,7 @@ export const InputSearchContainer = styled.div`
   max-width: 170px;
   background-color: ${colors.neutral200};
   border-radius: ${border.radius50};
-  padding: 10px 16px;
+  padding: ${spacing.layout12} ${spacing.layout16};
   display: flex;
   align-items: center;
   gap: ${spacing.layout8};

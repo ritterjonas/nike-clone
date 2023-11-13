@@ -1,13 +1,13 @@
-import { border, colors } from '@/styles/variables';
+import { border, colors, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const Modal = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100vw - 40px);
-  height: calc(100vh - 40px);
-  margin: 20px;
+  width: calc(100vw - ${spacing.layout40});
+  height: calc(100vh - ${spacing.layout40});
+  margin: ${spacing.layout20};
   background: ${colors.neutral100};
   display: flex;
   flex-direction: column;
@@ -28,14 +28,14 @@ export const ModalOverlay = styled.div`
 export const Header = styled.div`
   display: flex;
   justify-content: end;
-  padding: 8px 16px;
+  padding: ${spacing.layout8} ${spacing.layout16};
 `;
 
 export const CloseButton = styled.button`
   outline: none;
   border: none;
   background: transparent;
-  padding: 16px;
+  padding: ${spacing.layout16};
   cursor: pointer;
 `;
 

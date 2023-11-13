@@ -5,8 +5,8 @@ export const FooterContainer = styled.div`
   background-color: ${colors.neutral700};
   width: 100%;
   box-sizing: border-box;
-  padding: 40px;
-  padding-top: 16px;
+  padding: ${spacing.layout40};
+  padding-top: ${spacing.layout16};
   gap: ${spacing.layout16};
 `;
 
@@ -14,7 +14,7 @@ export const FooterContent = styled.div`
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
-  padding-bottom: 32px;
+  padding-bottom: ${spacing.layout32};
   border-bottom: 1px solid ${colors.neutral600};
 
   @media (max-width: 1023px) {
@@ -26,14 +26,14 @@ export const FooterSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${spacing.layout16};
-  padding: 24px 0;
+  padding: ${spacing.layout24} 0;
 `;
 
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${spacing.layout8};
-  margin-bottom: 24px;
+  margin-bottom: ${spacing.layout24};
 `;
 
 export const LinkTitle = styled.a`
@@ -68,7 +68,7 @@ export const LicenseContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
+  padding-top: ${spacing.layout32};
 
   @media (max-width: 1023px) {
     flex-direction: column;

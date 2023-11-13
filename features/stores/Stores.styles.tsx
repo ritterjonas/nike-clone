@@ -2,7 +2,7 @@ import { font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 40px 16px;
+  padding: ${spacing.layout40} ${spacing.layout16};
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,7 +5,7 @@ export const InputContainer = styled.div`
   background-color: ${colors.neutral100};
   border: 1px solid ${colors.neutral300};
   border-radius: ${border.radius50};
-  padding: 16px;
+  padding: ${spacing.layout16};
   display: flex;
   align-items: center;
   gap: ${spacing.layout8};

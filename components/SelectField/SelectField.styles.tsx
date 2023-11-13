@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const SelectContainer = styled.div`
   position: relative;
-  padding: 8px 0;
+  padding: ${spacing.layout8} 0;
 `;
 
 export const SelectBox = styled.div`
@@ -19,7 +19,7 @@ export const SelectPopover = styled.div`
   background: ${colors.neutral100};
   border-radius: ${border.radius8};
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
-  margin-top: 16px;
+  margin-top: ${spacing.layout16};
   z-index: 301;
 `;
 
@@ -30,7 +30,7 @@ export const SelectOverlay = styled.div`
 `;
 
 export const SelectItem = styled.div`
-  padding: 20px 16px;
+  padding: ${spacing.layout20} ${spacing.layout16};
   font-size: ${font.size12};
   cursor: pointer;
   border-radius: ${border.radius8};

@@ -2,7 +2,7 @@ import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const NewsContainer = styled.div`
-  padding: 8px 16px;
+  padding: ${spacing.layout8} ${spacing.layout16};
   background-color: ${colors.neutral200};
   position: relative;
   overflow: hidden;
@@ -33,8 +33,8 @@ export const NewsItemContent = styled.div`
 
 const ArrowButton = styled.div`
   border-radius: ${border.radius12};
-  height: 24px;
-  width: 24px;
+  height: ${spacing.layout24};
+  width: ${spacing.layout24};
   background-color: ${colors.neutral100};
   display: flex;
   justify-content: center;
@@ -46,11 +46,11 @@ const ArrowButton = styled.div`
 `;
 
 export const ArrowButtonLeft = styled(ArrowButton)`
-  left: 40px;
+  left: ${spacing.layout40};
 `;
 
 export const ArrowButtonRight = styled(ArrowButton)`
-  right: 40px;
+  right: ${spacing.layout40};
 `;
 
 export const Text = styled.span`

@@ -32,6 +32,7 @@ export const spacing = {
   layout12: '12px',
   layout16: '16px',
   layout20: '20px',
+  layout22: '22px',
   layout24: '24px',
   layout28: '28px',
   layout32: '32px',

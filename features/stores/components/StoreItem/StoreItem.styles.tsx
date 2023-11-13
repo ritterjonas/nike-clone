@@ -27,7 +27,7 @@ export const Distance = styled.h3`
 `;
 
 export const SeeMap = styled.button`
-  margin-top: 8px;
+  margin-top: ${spacing.layout8};
   padding: 0;
   display: flex;
   gap: ${spacing.layout8};
@@ -47,8 +47,8 @@ export const SeeMapText = styled.p`
 
 export const Card = styled.div`
   display: flex;
-  margin-top: 16px;
-  padding: 24px;
+  margin-top: ${spacing.layout16};
+  padding: ${spacing.layout24};
   flex-direction: column;
   align-items: flex-start;
   gap: ${spacing.layout8};

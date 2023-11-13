@@ -5,7 +5,7 @@ export const ReceiveNewsContainer = styled.div`
   background-color: ${colors.neutral200};
   width: 100%;
   box-sizing: border-box;
-  padding: 32px;
+  padding: ${spacing.layout32};
   display: flex;
   flex-direction: column;
   align-items: center;
