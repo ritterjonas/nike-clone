@@ -1,20 +1,21 @@
+import { colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-  background-color: #1a1a1a;
+  background-color: ${colors.neutral700};
   width: 100%;
   box-sizing: border-box;
-  padding: 40px;
-  padding-top: 16px;
-  gap: 16px;
+  padding: ${spacing.layout40};
+  padding-top: ${spacing.layout16};
+  gap: ${spacing.layout16};
 `;
 
 export const FooterContent = styled.div`
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #4d4d4d;
+  padding-bottom: ${spacing.layout32};
+  border-bottom: 1px solid ${colors.neutral600};
 
   @media (max-width: 1023px) {
     grid-auto-flow: row;
@@ -24,20 +25,20 @@ export const FooterContent = styled.div`
 export const FooterSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 24px 0;
+  gap: ${spacing.layout16};
+  padding: ${spacing.layout24} 0;
 `;
 
 export const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: ${spacing.layout8};
+  margin-bottom: ${spacing.layout24};
 `;
 
 export const LinkTitle = styled.a`
-  color: #fff;
-  font-size: 16px;
+  color: ${colors.neutral100};
+  font-size: ${font.size16};
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -45,8 +46,8 @@ export const LinkTitle = styled.a`
 `;
 
 export const Link = styled.a`
-  color: #f7f7f7;
-  font-size: 12px;
+  color: ${colors.neutral200};
+  font-size: ${font.size12};
   font-weight: 400;
   line-height: 150%;
   text-decoration: none;
@@ -54,43 +55,43 @@ export const Link = styled.a`
 
 export const PaymentIcons = styled.div`
   display: flex;
-  gap: 4px;
+  gap: ${spacing.layout4};
   flex-wrap: wrap;
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
-  gap: 8px;
+  gap: ${spacing.layout8};
 `;
 
 export const LicenseContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
+  padding-top: ${spacing.layout32};
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: 32px;
+    gap: ${spacing.layout32};
   }
 `;
 
 export const LicenseSection = styled.div`
   display: flex;
-  gap: 48px;
+  gap: ${spacing.layout48};
 `;
 
 export const LicenseLink = styled.a`
-  color: #f7f7f7;
+  color: ${colors.neutral200};
   text-decoration: none;
-  font-size: 12px;
+  font-size: ${font.size12};
 `;
 
 export const LicenseText = styled.div`
-  color: #d6d6d6;
+  color: ${colors.neutral300};
   text-decoration: none;
   text-align: right;
-  font-size: 12px;
+  font-size: ${font.size12};
   line-height: 150%;
 
   @media (max-width: 1023px) {

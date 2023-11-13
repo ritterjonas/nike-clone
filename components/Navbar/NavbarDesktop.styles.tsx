@@ -1,3 +1,4 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const NavbarComponentDesktop = styled.div`
@@ -9,9 +10,9 @@ export const NavbarComponentDesktop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: ${colors.neutral100};
   min-height: 72px;
-  padding: 0 40px;
+  padding: 0 ${spacing.layout40};
 `;
 
 export const NavbarAccount = styled.div`
@@ -20,40 +21,40 @@ export const NavbarAccount = styled.div`
   right: 0px;
   top: 0px;
   z-index: 100;
-  background: #f7f7f7;
+  background: ${colors.neutral200};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
+  padding: ${spacing.layout16} ${spacing.layout40};
 `;
 
 export const NavbarAccountImages = styled.div`
   display: flex;
-  gap: 18px;
+  gap: ${spacing.layout20};
 `;
 
 export const NavbarAccountItems = styled.div`
   display: flex;
-  gap: 16px;
+  gap: ${spacing.layout16};
   align-items: center;
 `;
 
 export const NavbarAccountItem = styled.a`
-  color: #737373;
-  font-size: 12px;
+  color: ${colors.neutral500};
+  font-size: ${font.size12};
   text-decoration: none;
 `;
 
 export const NavbarAccountSeparator = styled.div`
-  height: 16px;
+  height: ${spacing.layout16};
   width: 1px;
-  background: #737373;
+  background: ${colors.neutral500};
 `;
 
 export const NavbarIcons = styled.div`
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: ${spacing.layout32};
 `;
 
 export const NavbarIcon = styled.a`
@@ -65,18 +66,18 @@ export const NavbarMenus = styled.div`
 `;
 
 export const MenuItem = styled.div`
-  padding: 22px 12px;
+  padding: ${spacing.layout22} ${spacing.layout12};
   cursor: pointer;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid ${colors.neutral100};
 
   &:hover {
-    border-color: #000;
+    border-color: ${colors.primary};
   }
 `;
 
 export const MenuItemLink = styled.a`
-  color: #000;
-  font-size: 16px;
+  color: ${colors.primary};
+  font-size: ${font.size16};
   font-weight: 500;
   line-height: 150%;
   text-decoration: none;
@@ -85,25 +86,25 @@ export const MenuItemLink = styled.a`
 export const InputSearchContainer = styled.div`
   box-sizing: border-box;
   max-width: 170px;
-  background-color: #f7f7f7;
-  border-radius: 200px;
-  padding: 10px 16px;
+  background-color: ${colors.neutral200};
+  border-radius: ${border.radius50};
+  padding: ${spacing.layout12} ${spacing.layout16};
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: ${spacing.layout8};
   flex: 1;
 
   &:hover {
-    background: #d6d6d6;
+    background: ${colors.neutral300};
   }
 `;
 
 export const InputText = styled.input`
   background: transparent;
-  color: #737373;
+  color: ${colors.neutral500};
   border: none;
   outline: none;
   flex: 1;
-  font-size: 14px;
+  font-size: ${font.size14};
   width: 100%;
 `;

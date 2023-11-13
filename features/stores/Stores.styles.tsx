@@ -1,11 +1,12 @@
+import { font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 40px 16px;
+  padding: ${spacing.layout40} ${spacing.layout16};
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: ${spacing.layout40};
 `;
 
 export const StoresContainer = styled.div`
@@ -14,7 +15,7 @@ export const StoresContainer = styled.div`
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
-  gap: 32px;
+  gap: ${spacing.layout32};
 `;
 
 export const MapsContainer = styled.div`
@@ -22,7 +23,7 @@ export const MapsContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 32px;
+  font-size: ${font.size32};
   font-weight: 500;
   line-height: 120%;
   text-align: center;

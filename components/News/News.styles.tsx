@@ -1,8 +1,9 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const NewsContainer = styled.div`
-  padding: 8px 16px;
-  background-color: #f7f7f7;
+  padding: ${spacing.layout8} ${spacing.layout16};
+  background-color: ${colors.neutral200};
   position: relative;
   overflow: hidden;
 `;
@@ -22,19 +23,19 @@ export const NewsItemContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: ${spacing.layout24};
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: 4px;
+    gap: ${spacing.layout4};
   }
 `;
 
 const ArrowButton = styled.div`
-  border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  background-color: #fff;
+  border-radius: ${border.radius12};
+  height: ${spacing.layout24};
+  width: ${spacing.layout24};
+  background-color: ${colors.neutral100};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,17 +46,17 @@ const ArrowButton = styled.div`
 `;
 
 export const ArrowButtonLeft = styled(ArrowButton)`
-  left: 40px;
+  left: ${spacing.layout40};
 `;
 
 export const ArrowButtonRight = styled(ArrowButton)`
-  right: 40px;
+  right: ${spacing.layout40};
 `;
 
 export const Text = styled.span`
-  font-size: 12px;
+  font-size: ${font.size12};
 `;
 
 export const Link = styled.a`
-  color: #000;
+  color: ${colors.neutral700};
 `;

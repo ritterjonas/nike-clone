@@ -1,24 +1,25 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const SelectContainer = styled.div`
   position: relative;
-  padding: 8px 0;
+  padding: ${spacing.layout8} 0;
 `;
 
 export const SelectBox = styled.div`
-  font-size: 14px;
+  font-size: ${font.size14};
   display: flex;
-  gap: 16px;
+  gap: ${spacing.layout16};
   align-items: center;
   cursor: pointer;
 `;
 
 export const SelectPopover = styled.div`
   position: absolute;
-  background: #fff;
-  border-radius: 8px;
+  background: ${colors.neutral100};
+  border-radius: ${border.radius8};
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
-  margin-top: 16px;
+  margin-top: ${spacing.layout16};
   z-index: 301;
 `;
 
@@ -29,12 +30,12 @@ export const SelectOverlay = styled.div`
 `;
 
 export const SelectItem = styled.div`
-  padding: 20px 16px;
-  font-size: 12px;
+  padding: ${spacing.layout20} ${spacing.layout16};
+  font-size: ${font.size12};
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: ${border.radius8};
 
   &:hover {
-    background: #f7f7f7;
+    background: ${colors.neutral200};
   }
 `;

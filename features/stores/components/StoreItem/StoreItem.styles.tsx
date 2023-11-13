@@ -1,3 +1,4 @@
+import { border, colors, font, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -10,26 +11,26 @@ export const Header = styled.div`
 `;
 
 export const StoreName = styled.h2`
-  color: #1a1a1a;
-  font-size: 24px;
+  color: ${colors.neutral700};
+  font-size: ${font.size24};
   font-weight: 500;
   line-height: 120%;
   flex: 1;
 `;
 
 export const Distance = styled.h3`
-  color: #1a1a1a;
-  font-size: 18px;
+  color: ${colors.neutral700};
+  font-size: ${font.size18};
   font-weight: 500;
   line-height: 120%;
   text-align: right;
 `;
 
 export const SeeMap = styled.button`
-  margin-top: 8px;
+  margin-top: ${spacing.layout8};
   padding: 0;
   display: flex;
-  gap: 8px;
+  gap: ${spacing.layout8};
   border: none;
   background: transparent;
   outline: none;
@@ -37,8 +38,8 @@ export const SeeMap = styled.button`
 `;
 
 export const SeeMapText = styled.p`
-  color: #1a1a1a;
-  font-size: 16px;
+  color: ${colors.neutral700};
+  font-size: ${font.size16};
   font-weight: 400;
   line-height: 150%;
   text-decoration-line: underline;
@@ -46,30 +47,30 @@ export const SeeMapText = styled.p`
 
 export const Card = styled.div`
   display: flex;
-  margin-top: 16px;
-  padding: 24px;
+  margin-top: ${spacing.layout16};
+  padding: ${spacing.layout24};
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-  border-radius: 8px;
-  background: #fff;
+  gap: ${spacing.layout8};
+  border-radius: ${border.radius8};
+  background: ${colors.neutral100};
 `;
 
 export const Address = styled.p`
-  color: #737373;
-  font-size: 14px;
+  color: ${colors.neutral500};
+  font-size: ${font.size14};
   line-height: 150%;
 `;
 
 export const Info = styled.p`
-  color: #737373;
-  font-size: 12px;
+  color: ${colors.neutral500};
+  font-size: ${font.size12};
   line-height: 150%;
 `;
 
 export const Disponibility = styled.p`
-  color: #061;
-  font-size: 12px;
+  color: ${colors.success300};
+  font-size: ${font.size12};
   font-weight: 700;
   line-height: 150%;
 `;

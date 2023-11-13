@@ -1,13 +1,14 @@
+import { border, colors, spacing } from '@/styles/variables';
 import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  padding: 16px 24px;
+  padding: ${spacing.layout16} ${spacing.layout24};
   flex-direction: column;
   align-items: end;
-  gap: 32px;
-  border-radius: 8px;
-  background: #f7f7f7;
+  gap: ${spacing.layout32};
+  border-radius: ${border.radius8};
+  background: ${colors.neutral200};
   flex: 1 1 0px;
 `;
 
