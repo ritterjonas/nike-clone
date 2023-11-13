@@ -4,14 +4,17 @@
 
 The project is a web page that, based on the customer's geographical location and the list of NIKE stores, calculates the distances to the three nearest stores for the customer to pick up their product.
 
+Note: For the distances between the user and each store to be displayed, enable the browser's location access permission.
+
 ## Demo
 
 Check out the live demo of the application at [https://eng-gruposbf-frontend-javascript-nu.vercel.app](https://eng-gruposbf-frontend-javascript-nu.vercel.app).
 
-## Technologies Used
+## Technologies
 
 - **Next.js 14:** React framework for building fast and scalable web applications.
-- **React 18.2:** JavaScript library for building interactive user interfaces.
+- **React 18:** JavaScript library for building interactive user interfaces.
+- **TypeScript:** Superset of JavaScript that adds static types to the language.
 - **React Testing Library:** Used for testing the application, ensuring code quality.
 
 ## Minimum Requirements
@@ -73,5 +76,3 @@ Make sure to have the following requirements installed in your environment:
    The application will be available at [http://localhost:3000](http://localhost:3000).
 
    This option uses Docker Compose to create containers for both the Next.js application and any required services.
-
-Make sure to adjust configurations as needed, considering environment variables and other parameters specific to your deployment environment.
