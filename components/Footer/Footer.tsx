@@ -64,13 +64,14 @@ export default function Footer() {
 
             <SocialIcons>
               {socialNames.map(name => (
-                <Image
-                  src={`/images/logo_redes_sociais_${name}.svg`}
-                  alt={`${name} logo`}
-                  width={32}
-                  height={32}
-                  key={name}
-                />
+                <a href='#' key={name}>
+                  <Image
+                    src={`/images/logo_redes_sociais_${name}.svg`}
+                    alt={`${name} logo`}
+                    width={32}
+                    height={32}
+                  />
+                </a>
               ))}
             </SocialIcons>
 

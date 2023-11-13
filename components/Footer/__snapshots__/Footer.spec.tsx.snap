@@ -178,36 +178,48 @@ exports[`<Footer /> matches snapshot 1`] = `
           <div
             class="sc-ee751fab-7 kfyGjo"
           >
-            <img
-              alt="facebook logo"
-              data-nimg="1"
-              decoding="async"
-              height="32"
-              loading="lazy"
-              src="/images/logo_redes_sociais_facebook.svg"
-              style="color: transparent;"
-              width="32"
-            />
-            <img
-              alt="instagram logo"
-              data-nimg="1"
-              decoding="async"
-              height="32"
-              loading="lazy"
-              src="/images/logo_redes_sociais_instagram.svg"
-              style="color: transparent;"
-              width="32"
-            />
-            <img
-              alt="youtube logo"
-              data-nimg="1"
-              decoding="async"
-              height="32"
-              loading="lazy"
-              src="/images/logo_redes_sociais_youtube.svg"
-              style="color: transparent;"
-              width="32"
-            />
+            <a
+              href="#"
+            >
+              <img
+                alt="facebook logo"
+                data-nimg="1"
+                decoding="async"
+                height="32"
+                loading="lazy"
+                src="/images/logo_redes_sociais_facebook.svg"
+                style="color: transparent;"
+                width="32"
+              />
+            </a>
+            <a
+              href="#"
+            >
+              <img
+                alt="instagram logo"
+                data-nimg="1"
+                decoding="async"
+                height="32"
+                loading="lazy"
+                src="/images/logo_redes_sociais_instagram.svg"
+                style="color: transparent;"
+                width="32"
+              />
+            </a>
+            <a
+              href="#"
+            >
+              <img
+                alt="youtube logo"
+                data-nimg="1"
+                decoding="async"
+                height="32"
+                loading="lazy"
+                src="/images/logo_redes_sociais_youtube.svg"
+                style="color: transparent;"
+                width="32"
+              />
+            </a>
           </div>
           <a
             class="sc-ee751fab-4 dmmEvS"
