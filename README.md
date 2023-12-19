@@ -9,10 +9,10 @@ Note: For the distances between the user and each store to be displayed, enable 
 
 ## Screenshots
 ### Desktop:
-<img width="1680" alt="image" src="https://github.com/ritterjonas/eng-gruposbf-frontend-javascript/assets/27284455/44e05a1c-28ae-455a-b6c5-5e742f4a66cc">
+<img width="1680" alt="image" src="https://github.com/ritterjonas/nike-clone/assets/27284455/34a69ae5-67df-4ba0-90a6-039fd22cd8cd">
 
 ### Mobile:
-<img width="391" alt="image" src="https://github.com/ritterjonas/eng-gruposbf-frontend-javascript/assets/27284455/b813f6fc-951f-490f-93f5-b8d3ec1d45c0">
+<img width="391" alt="image" src="https://github.com/ritterjonas/nike-clone/assets/27284455/a7adceb6-76a0-4c3e-b59e-c86af30f7534">
 
 
 ## Technologies
