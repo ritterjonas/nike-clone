@@ -1,4 +1,4 @@
-# eng-gruposbf-frontend-javascript
+# nike-clone
 
 ## Project Description
 
@@ -6,11 +6,8 @@ The project is a web page that, based on the customer's geographical location an
 
 Note: For the distances between the user and each store to be displayed, enable the browser's location access permission.
 
-## Demo
 
-Check out the live demo of the application at [https://eng-gruposbf-frontend-javascript-nu.vercel.app](https://eng-gruposbf-frontend-javascript-nu.vercel.app).
-
-## Scheenshots
+## Screenshots
 ### Desktop:
 <img width="1680" alt="image" src="https://github.com/ritterjonas/eng-gruposbf-frontend-javascript/assets/27284455/44e05a1c-28ae-455a-b6c5-5e742f4a66cc">
 
